@@ -1,0 +1,30 @@
+# Dynamic Art Generator Requirements
+# Install with: pip install -r requirements.txt
+
+# Core GUI and Graphics
+pygame==2.5.2
+numpy==1.24.3
+Pillow==10.0.0
+
+# Audio Processing
+pyaudio==0.2.11
+librosa==0.10.1
+soundfile==0.12.1
+
+# Mathematical and Scientific Computing
+scipy==1.10.1
+matplotlib==3.7.1
+
+# Development and Debugging
+pytest==7.4.0
+black==23.3.0
+flake8==6.0.0
+
+# Optional: For advanced audio features
+# aubio==0.4.9
+# essentia==2.1b6.dev1034
+
+# Platform-specific notes:
+# Windows: You may need to install Microsoft Visual C++ Build Tools
+# macOS: Use 'brew install portaudio' before installing pyaudio
+# Linux: Use 'sudo apt-get install portaudio19-dev' before installing pyaudio

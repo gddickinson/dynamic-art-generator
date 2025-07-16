@@ -1,0 +1,124 @@
+{
+  "application": {
+    "name": "Dynamic Art Generator",
+    "version": "1.0.0",
+    "window_size": [1200, 800],
+    "canvas_size": [800, 600],
+    "target_fps": 60
+  },
+  "audio": {
+    "sample_rate": 44100,
+    "chunk_size": 1024,
+    "input_device_index": null,
+    "enabled": true,
+    "beat_threshold": 0.1,
+    "smoothing_factor": 0.8
+  },
+  "graphics": {
+    "background_color": [0, 0, 0],
+    "enable_antialiasing": true,
+    "enable_alpha_blending": true,
+    "max_trail_length": 1000,
+    "max_particles": 2000
+  },
+  "plugins": {
+    "default_plugin": "Pendulum",
+    "plugin_directory": "plugins",
+    "auto_load": true,
+    "pendulum": {
+      "default_gravity": 9.81,
+      "default_damping": 0.999,
+      "default_ellipse_a": 150,
+      "default_ellipse_b": 100,
+      "default_audio_sensitivity": 1.0,
+      "default_trail_length": 500,
+      "default_line_width": 2,
+      "color_cycle_speed": 1.0
+    },
+    "particles": {
+      "default_max_particles": 1000,
+      "default_spawn_rate": 50,
+      "default_particle_life": 3.0,
+      "default_particle_speed": 50,
+      "default_gravity": 20,
+      "default_wind": 0,
+      "default_audio_sensitivity": 1.0,
+      "default_shape_size": 100,
+      "default_color_cycle_speed": 30
+    }
+  },
+  "performance": {
+    "enable_profiling": false,
+    "max_cpu_usage": 80,
+    "adaptive_quality": true,
+    "background_processing": false
+  },
+  "debugging": {
+    "log_level": "INFO",
+    "enable_console": true,
+    "save_logs": false,
+    "log_file": "debug.log",
+    "show_fps": true,
+    "show_audio_levels": true
+  },
+  "export": {
+    "default_format": "PNG",
+    "default_resolution": [1920, 1080],
+    "enable_video_export": false,
+    "video_codec": "mp4v",
+    "video_fps": 30
+  },
+  "ui": {
+    "theme": "default",
+    "font_family": "Arial",
+    "font_size": 10,
+    "enable_tooltips": true,
+    "auto_save_settings": true,
+    "parameter_precision": 3
+  },
+  "midi": {
+    "enabled": false,
+    "input_device": null,
+    "channel_mapping": {
+      "1": "amplitude_control",
+      "2": "frequency_control",
+      "3": "plugin_parameter_1",
+      "4": "plugin_parameter_2"
+    }
+  },
+  "presets": {
+    "auto_load_last": true,
+    "save_on_exit": true,
+    "preset_directory": "presets",
+    "default_presets": [
+      {
+        "name": "Gentle Pendulum",
+        "plugin": "Pendulum",
+        "parameters": {
+          "gravity": 5.0,
+          "damping": 0.995,
+          "audio_sensitivity": 0.5
+        }
+      },
+      {
+        "name": "Explosive Particles",
+        "plugin": "Particles",
+        "parameters": {
+          "spawn_rate": 100,
+          "particle_speed": 100,
+          "audio_sensitivity": 2.0
+        }
+      },
+      {
+        "name": "Calm Meditation",
+        "plugin": "Pendulum",
+        "parameters": {
+          "gravity": 2.0,
+          "damping": 0.999,
+          "audio_sensitivity": 0.2,
+          "trail_length": 1000
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "presets": [
+    {
+      "name": "Gentle Pendulum",
+      "description": "Soft, flowing pendulum motion perfect for ambient music",
+      "plugin": "Pendulum",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 0.6,
+        "smoothing": 0.8
+      },
+      "parameters": {
+        "gravity": 3.5,
+        "damping": 0.998,
+        "ellipse_a": 120,
+        "ellipse_b": 80,
+        "audio_sensitivity": 0.6,
+        "trail_length": 800,
+        "line_width": 2
+      },
+      "visual_settings": {
+        "background_color": [5, 5, 15],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Explosive Pendulum",
+      "description": "High-energy pendulum with strong beat response",
+      "plugin": "Pendulum",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 1.5,
+        "smoothing": 0.3
+      },
+      "parameters": {
+        "gravity": 15.0,
+        "damping": 0.99,
+        "ellipse_a": 200,
+        "ellipse_b": 150,
+        "audio_sensitivity": 2.0,
+        "trail_length": 400,
+        "line_width": 3
+      },
+      "visual_settings": {
+        "background_color": [20, 0, 20],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Calm Particles",
+      "description": "Gentle particle flow for relaxation",
+      "plugin": "Particles",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 0.7,
+        "smoothing": 0.9
+      },
+      "parameters": {
+        "max_particles": 500,
+        "spawn_rate": 20,
+        "particle_life": 5.0,
+        "particle_speed": 30,
+        "gravity": 10,
+        "wind": 0,
+        "audio_sensitivity": 0.8,
+        "shape_size": 80,
+        "color_cycle_speed": 10
+      },
+      "visual_settings": {
+        "background_color": [0, 10, 20],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Particle Storm",
+      "description": "Intense particle system with rapid changes",
+      "plugin": "Particles",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 1.2,
+        "smoothing": 0.4
+      },
+      "parameters": {
+        "max_particles": 1500,
+        "spawn_rate": 100,
+        "particle_life": 2.0,
+        "particle_speed": 80,
+        "gravity": 30,
+        "wind": 20,
+        "audio_sensitivity": 1.8,
+        "shape_size": 150,
+        "color_cycle_speed": 60
+      },
+      "visual_settings": {
+        "background_color": [30, 0, 0],
+        "fade_trails": false
+      }
+    },
+    
+    {
+      "name": "Meditation Mode",
+      "description": "Minimal, slow-moving visuals for meditation",
+      "plugin": "Pendulum",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 0.3,
+        "smoothing": 0.95
+      },
+      "parameters": {
+        "gravity": 2.0,
+        "damping": 0.9995,
+        "ellipse_a": 100,
+        "ellipse_b": 60,
+        "audio_sensitivity": 0.3,
+        "trail_length": 1000,
+        "line_width": 1
+      },
+      "visual_settings": {
+        "background_color": [0, 5, 10],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Dance Party",
+      "description": "High-energy visuals for electronic music",
+      "plugin": "Particles",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 1.8,
+        "smoothing": 0.2
+      },
+      "parameters": {
+        "max_particles": 2000,
+        "spawn_rate": 150,
+        "particle_life": 1.5,
+        "particle_speed": 120,
+        "gravity": 50,
+        "wind": 40,
+        "audio_sensitivity": 2.5,
+        "shape_size": 200,
+        "color_cycle_speed": 100
+      },
+      "visual_settings": {
+        "background_color": [0, 0, 0],
+        "fade_trails": false
+      }
+    },
+    
+    {
+      "name": "Underwater Dreams",
+      "description": "Flowing, organic movement like underwater currents",
+      "plugin": "Pendulum",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 0.8,
+        "smoothing": 0.85
+      },
+      "parameters": {
+        "gravity": 4.0,
+        "damping": 0.997,
+        "ellipse_a": 180,
+        "ellipse_b": 120,
+        "audio_sensitivity": 0.9,
+        "trail_length": 600,
+        "line_width": 2
+      },
+      "visual_settings": {
+        "background_color": [0, 20, 40],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Fire Particles",
+      "description": "Particle system resembling flames and sparks",
+      "plugin": "Particles",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 1.0,
+        "smoothing": 0.6
+      },
+      "parameters": {
+        "max_particles": 800,
+        "spawn_rate": 60,
+        "particle_life": 3.0,
+        "particle_speed": 50,
+        "gravity": -20,
+        "wind": 15,
+        "audio_sensitivity": 1.2,
+        "shape_size": 40,
+        "color_cycle_speed": 80
+      },
+      "visual_settings": {
+        "background_color": [20, 10, 0],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Cosmic Pendulum",
+      "description": "Large, sweeping movements like planetary orbits",
+      "plugin": "Pendulum",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 0.7,
+        "smoothing": 0.7
+      },
+      "parameters": {
+        "gravity": 8.0,
+        "damping": 0.9985,
+        "ellipse_a": 250,
+        "ellipse_b": 180,
+        "audio_sensitivity": 1.0,
+        "trail_length": 300,
+        "line_width": 3
+      },
+      "visual_settings": {
+        "background_color": [10, 0, 30],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Minimal Zen",
+      "description": "Simple, clean visuals with minimal distraction",
+      "plugin": "Particles",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 0.4,
+        "smoothing": 0.9
+      },
+      "parameters": {
+        "max_particles": 200,
+        "spawn_rate": 15,
+        "particle_life": 8.0,
+        "particle_speed": 20,
+        "gravity": 5,
+        "wind": 0,
+        "audio_sensitivity": 0.5,
+        "shape_size": 60,
+        "color_cycle_speed": 5
+      },
+      "visual_settings": {
+        "background_color": [5, 5, 5],
+        "fade_trails": true
+      }
+    },
+    
+    {
+      "name": "Glitch Art",
+      "description": "Rapid, chaotic movements for experimental music",
+      "plugin": "Pendulum",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 2.0,
+        "smoothing": 0.1
+      },
+      "parameters": {
+        "gravity": 20.0,
+        "damping": 0.95,
+        "ellipse_a": 300,
+        "ellipse_b": 200,
+        "audio_sensitivity": 3.0,
+        "trail_length": 100,
+        "line_width": 4
+      },
+      "visual_settings": {
+        "background_color": [0, 0, 0],
+        "fade_trails": false
+      }
+    },
+    
+    {
+      "name": "Starfield",
+      "description": "Particle system resembling stars and galaxies",
+      "plugin": "Particles",
+      "audio_settings": {
+        "enabled": true,
+        "sensitivity": 0.8,
+        "smoothing": 0.8
+      },
+      "parameters": {
+        "max_particles": 1000,
+        "spawn_rate": 40,
+        "particle_life": 6.0,
+        "particle_speed": 10,
+        "gravity": 0,
+        "wind": 5,
+        "audio_sensitivity": 0.6,
+        "shape_size": 300,
+        "color_cycle_speed": 20
+      },
+      "visual_settings": {
+        "background_color": [0, 0, 10],
+        "fade_trails": true
+      }
+    }
+  ],
+  
+  "categories": {
+    "ambient": [
+      "Gentle Pendulum",
+      "Calm Particles", 
+      "Meditation Mode",
+      "Underwater Dreams",
+      "Minimal Zen",
+      "Starfield"
+    ],
+    "energetic": [
+      "Explosive Pendulum",
+      "Particle Storm",
+      "Dance Party",
+      "Fire Particles",
+      "Glitch Art"
+    ],
+    "cosmic": [
+      "Cosmic Pendulum",
+      "Starfield",
+      "Underwater Dreams"
+    ],
+    "minimal": [
+      "Meditation Mode",
+      "Minimal Zen",
+      "Gentle Pendulum"
+    ]
+  },
+  
+  "audio_profiles": {
+    "microphone_live": {
+      "description": "Optimized for live microphone input",
+      "sample_rate": 44100,
+      "chunk_size": 1024,
+      "beat_threshold": 0.12,
+      "smoothing_factor": 0.7
+    },
+    "music_playback": {
+      "description": "Optimized for music playback through speakers",
+      "sample_rate": 44100,
+      "chunk_size": 2048,
+      "beat_threshold": 0.15,
+      "smoothing_factor": 0.8
+    },
+    "sensitive": {
+      "description": "High sensitivity for quiet environments",
+      "sample_rate": 44100,
+      "chunk_size": 512,
+      "beat_threshold": 0.08,
+      "smoothing_factor": 0.6
+    },
+    "performance": {
+      "description": "Low latency for live performance",
+      "sample_rate": 44100,
+      "chunk_size": 256,
+      "beat_threshold": 0.2,
+      "smoothing_factor": 0.5
+    }
+  },
+  
+  "visual_themes": {
+    "dark": {
+      "background_color": [0, 0, 0],
+      "text_color": [255, 255, 255],
+      "accent_color": [100, 100, 255]
+    },
+    "blue": {
+      "background_color": [0, 20, 40],
+      "text_color": [200, 220, 255],
+      "accent_color": [0, 150, 255]
+    },
+    "warm": {
+      "background_color": [20, 10, 0],
+      "text_color": [255, 220, 180],
+      "accent_color": [255, 150, 50]
+    },
+    "cosmic": {
+      "background_color": [10, 0, 30],
+      "text_color": [200, 150, 255],
+      "accent_color": [150, 50, 255]
+    },
+    "minimal": {
+      "background_color": [15, 15, 15],
+      "text_color": [240, 240, 240],
+      "accent_color": [200, 200, 200]
+    }
+  },
+  
+  "performance_profiles": {
+    "low_end": {
+      "description": "Optimized for older hardware",
+      "max_particles": 300,
+      "max_trail_length": 200,
+      "target_fps": 30,
+      "quality": "low"
+    },
+    "balanced": {
+      "description": "Good performance and quality balance",
+      "max_particles": 800,
+      "max_trail_length": 500,
+      "target_fps": 60,
+      "quality": "medium"
+    },
+    "high_end": {
+      "description": "Maximum quality for powerful hardware",
+      "max_particles": 2000,
+      "max_trail_length": 1000,
+      "target_fps": 60,
+      "quality": "high"
+    }
+  },
+  
+  "user_instructions": {
+    "getting_started": [
+      "1. Select a preset from the dropdown menu",
+      "2. Click 'Load Preset' to apply settings",
+      "3. Enable audio input and click 'Start'",
+      "4. Make some noise and watch the art respond!",
+      "5. Adjust parameters with the sliders for customization"
+    ],
+    "preset_tips": [
+      "- 'Gentle Pendulum' is perfect for beginners",
+      "- 'Dance Party' works great with electronic music",
+      "- 'Meditation Mode' is ideal for quiet environments",
+      "- 'Glitch Art' creates experimental, chaotic visuals",
+      "- Create your own presets by saving current settings"
+    ],
+    "audio_tips": [
+      "- Adjust microphone sensitivity if visuals are too responsive",
+      "- Use 'microphone_live' profile for real-time input",
+      "- Try 'music_playback' profile when playing music through speakers",
+      "- Enable smoothing for more stable visuals"
+    ]
+  }
+}
