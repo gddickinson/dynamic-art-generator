@@ -233,7 +233,7 @@ For live performance use:
 
 ## License
 
-[Your chosen license here]
+Released under the [MIT licence](LICENSE).
 
 ## Inspiration
 
