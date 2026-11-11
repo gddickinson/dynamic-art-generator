@@ -7,9 +7,11 @@ A real-time audiovisual art generation system with a plugin-based architecture. 
 - **Real-time Audio Processing**: Responds to microphone input or internal audio
 - **Plugin System**: Extensible architecture for different art styles
 - **Interactive GUI**: Full-featured interface with parameter controls
-- **Multiple Art Styles**: 
-  - Pendulum Art: Paint-can style elliptical pendulum trails
-  - Particle Systems: Dynamic sand/smoke-like particle effects
+- **Multiple Art Styles** (13 plugins in `plugins/`, discovered automatically):
+  - Pendulum: paint-can style elliptical pendulum trails
+  - Particles: dynamic sand/smoke-like particle effects
+  - Bio-Mechanical Garden, Cosmic Web, Digital Spectre, Musical Ecosystem, Musical Flock, Neural Flow,
+    Noise Sphere, Particle Fountain, Quantum Jazz, Rehoboam, Space Junk
 - **Audio Responsiveness**: Art reacts to amplitude, frequency, and beat detection
 - **Parameter Tweaking**: Real-time adjustment of visual parameters
 
@@ -45,7 +47,7 @@ pip install -r requirements.txt
 
 ### Quick Install
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/gddickinson/dynamic-art-generator.git
 cd dynamic-art-generator
 pip install -r requirements.txt
 python main.py
@@ -93,9 +95,11 @@ Generates dynamic particle systems that form and collapse around shapes:
 ### Audio Features
 
 The system analyzes audio input for:
-- **Amplitude**: Overall volume level
-- **Beat Detection**: Sudden volume increases
-- **Frequency Analysis**: Dominant frequency content
+- **Amplitude**: Overall volume level (RMS of each 1024-sample chunk)
+- **Beat Detection**: volume (RMS) above 0.1 in the desktop app; `utils/audio_utils.py` AudioAnalyzer also offers
+  adaptive energy-based beats
+- **Frequency Analysis**: dominant frequency, bass/mid/treble energy shares, spectral centroid and more
+  (AudioAnalyzer, `utils/desktop_features.py`)
 
 These features drive various visual responses:
 - Beat detection triggers particle bursts
@@ -146,17 +150,21 @@ dynamic-art-generator/
 ├── requirements.txt        # Dependencies
 ├── README.md              # This file
 ├── config.json            # Configuration settings
-├── plugins/               # Plugin directory
-│   ├── __init__.py
+├── launcher.py            # macOS launcher (checks, writes and runs macos_demo.py)
+├── example_presets.json   # Example presets (plugin + parameters)
+├── plugins/               # Plugin directory (13 plugins, auto-discovered)
+│   ├── __init__.py        # ArtPlugin base class and PluginManager
 │   ├── pendulum.py        # Pendulum plugin
-│   └── particles.py       # Particle plugin
+│   ├── particles.py       # Particle plugin
+│   └── ...                # biomech_garden, cosmic_web, digital_spectre, ecosystem, musical_flock,
+│                          # neural_flow, noise_sphere, particle_fountain, quantum_jazz, rehoboam, space_junk
 ├── utils/                 # Utility modules
 │   ├── __init__.py
-│   ├── audio_utils.py     # Audio processing utilities
+│   ├── audio_utils.py     # Audio analysis (AudioAnalyzer), DrumMachine, smoothing
+│   ├── desktop_features.py # The features main.py hands to the plugins
 │   └── math_utils.py      # Mathematical helpers
-└── examples/              # Example configurations
-    ├── preset1.json
-    └── preset2.json
+├── tests/                 # pytest tests
+└── web/                   # Web interface and static site (see below)
 ```
 
 ## Troubleshooting
@@ -189,7 +197,7 @@ dynamic-art-generator/
 
 **Plugin not appearing:**
 - Ensure plugin inherits from `ArtPlugin`
-- Check plugin is registered in the main application
+- Check the file is in `plugins/` (plugins are discovered automatically) and imports without errors
 - Verify all required methods are implemented
 
 ## Advanced Features
@@ -246,7 +254,7 @@ This project draws inspiration from:
 
 ### Audio Processing
 - Uses PyAudio for real-time audio capture
-- Librosa for advanced audio analysis
+- NumPy FFT-based analysis (`utils/audio_utils.py`); librosa is imported but not used for analysis
 - 44.1kHz sample rate with 1024-sample buffers
 
 ### Graphics Rendering
