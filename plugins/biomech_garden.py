@@ -440,8 +440,9 @@ class BioMechGardenPlugin(ArtPlugin):
             }
             flower.update(dt, scaled_audio)
         
-        # Clean up old/small vines
-        self.vines = [vine for vine in self.vines if len(vine.segments) > 2]
+        # Clean up small vines that can no longer grow (new vines start with one segment and grow over time)
+        self.vines = [vine for vine in self.vines
+                      if len(vine.segments) > 2 or len(vine.segments) < vine.max_length]
     
     def spawn_new_vine(self):
         """Spawn a new vine at a random location"""
@@ -558,7 +559,7 @@ class BioMechGardenPlugin(ArtPlugin):
         
         # Gear color based on energy
         base_brightness = 120 + int(energy_level * 100)
-        gear_color = (base_brightness, base_brightness, base_brightness + 20)
+        gear_color = (min(255, base_brightness), min(255, base_brightness), min(255, base_brightness + 20))
         
         try:
             # Draw gear body
@@ -720,8 +721,9 @@ class BioMechGardenPlugin(ArtPlugin):
                             rotated_surface = pygame.transform.rotate(line_surface, 
                                                                     -math.degrees(angle))
                             
-                            surface.blit(rotated_surface, 
-                                       (comp1[0] - 10, comp1[1] - 10))
+                            # centre the rotated surface on the midpoint of the connection
+                            mid = ((comp1[0] + comp2[0]) / 2, (comp1[1] + comp2[1]) / 2)
+                            surface.blit(rotated_surface, rotated_surface.get_rect(center=mid))
                         
                         except:
                             pass
