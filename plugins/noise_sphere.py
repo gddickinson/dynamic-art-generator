@@ -368,8 +368,10 @@ class NoiseSpherePlugin(ArtPlugin):
                     
                     alpha_color = (*hair_color, self.hair_alpha)
                     
-                    rel_base = (thickness, thickness)
-                    rel_tip = (tip_2d[0] - base_2d[0] + thickness, tip_2d[1] - base_2d[1] + thickness)
+                    # relative to the surface's corner (the blit position below)
+                    x0, y0 = min(base_2d[0], tip_2d[0]), min(base_2d[1], tip_2d[1])
+                    rel_base = (base_2d[0] - x0 + thickness, base_2d[1] - y0 + thickness)
+                    rel_tip = (tip_2d[0] - x0 + thickness, tip_2d[1] - y0 + thickness)
                     
                     pygame.draw.line(hair_surface, alpha_color, rel_base, rel_tip, thickness)
                     surface.blit(hair_surface, (min(base_2d[0], tip_2d[0]) - thickness,

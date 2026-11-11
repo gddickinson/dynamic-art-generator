@@ -535,8 +535,10 @@ class NeuralFlowPlugin(ArtPlugin):
                     line_color = (*base_color, line_alpha)
                     
                     # Simple line (curve would be more complex)
-                    rel_start = (20, 20)
-                    rel_end = (end_pos[0] - start_pos[0] + 20, end_pos[1] - start_pos[1] + 20)
+                    # relative to the surface's corner (the blit position below)
+                    x0, y0 = min(start_pos[0], end_pos[0]), min(start_pos[1], end_pos[1])
+                    rel_start = (start_pos[0] - x0 + 20, start_pos[1] - y0 + 20)
+                    rel_end = (end_pos[0] - x0 + 20, end_pos[1] - y0 + 20)
                     
                     try:
                         pygame.draw.line(connection_surface, line_color, 

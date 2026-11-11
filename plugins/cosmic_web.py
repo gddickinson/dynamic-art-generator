@@ -473,8 +473,10 @@ class CosmicWebPlugin(ArtPlugin):
                         line_alpha = max(0, min(255, alpha // (thickness + 1)))
                         line_color = (*connection_color, line_alpha)
 
-                        rel_start = (10, 10)
-                        rel_end = (end_pos[0] - start_pos[0] + 10, end_pos[1] - start_pos[1] + 10)
+                        # relative to the surface's corner (the blit position below)
+                        x0, y0 = min(start_pos[0], end_pos[0]), min(start_pos[1], end_pos[1])
+                        rel_start = (start_pos[0] - x0 + 10, start_pos[1] - y0 + 10)
+                        rel_end = (end_pos[0] - x0 + 10, end_pos[1] - y0 + 10)
 
                         try:
                             pygame.draw.line(line_surface, line_color, rel_start, rel_end, thickness)
