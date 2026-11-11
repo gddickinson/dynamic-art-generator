@@ -513,6 +513,7 @@ class QuantumJazzPlugin(ArtPlugin):
         # Create new particles (pair production from vacuum fluctuations)
         if (len(self.particles) < self.max_particles and
             self.quantum_field_energy > 0.5 and
+            self.particle_creation_rate > 0 and   # a rate of 0 means no new pairs
             self.time_offset - self.last_creation_time > (1 / self.particle_creation_rate)):
 
             self.create_particle_pair()
@@ -692,8 +693,10 @@ class QuantumJazzPlugin(ArtPlugin):
                                                        abs(end_pos[1] - start_pos[1]) + 10),
                                                       pygame.SRCALPHA)
 
-                        rel_start = (5, 5)
-                        rel_end = (end_pos[0] - start_pos[0] + 5, end_pos[1] - start_pos[1] + 5)
+                        # relative to the surface's corner (the blit position below)
+                        x0, y0 = min(start_pos[0], end_pos[0]), min(start_pos[1], end_pos[1])
+                        rel_start = (start_pos[0] - x0 + 5, start_pos[1] - y0 + 5)
+                        rel_end = (end_pos[0] - x0 + 5, end_pos[1] - y0 + 5)
 
                         pygame.draw.line(trail_surface, faded_color, rel_start, rel_end, 1)
                         surface.blit(trail_surface,
