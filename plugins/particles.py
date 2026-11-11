@@ -124,7 +124,8 @@ class Particle:
         self.life -= dt
         
         # Update size based on life (shrink over time)
-        life_ratio = self.life / self.max_life
+        # (a zero lifetime, reachable from the particle_life slider, means the particle is already dead)
+        life_ratio = self.life / self.max_life if self.max_life > 0 else 0.0
         self.size = self.initial_size * life_ratio
         
         # Update color alpha based on life
