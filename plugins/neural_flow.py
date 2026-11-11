@@ -78,6 +78,8 @@ class FlowParticle:
         self.color_offset = random.uniform(0, 60)
         self.pulse_phase = random.uniform(0, 2 * math.pi)
         self.breathing_rate = random.uniform(1, 3)
+        self.clustering_scale = 1.0   # plugin clustering_strength (0 when enable_clustering is off)
+        self.breathing_scale = 1.0    # plugin organic_breathing
         
         # Network properties
         self.connections = []
@@ -118,7 +120,8 @@ class FlowParticle:
         self.vy += flow_vy * self.flow_strength * dt * 100
         
         # Organic clustering behavior
-        self.apply_clustering_forces(other_particles, dt, amplitude)
+        if self.clustering_scale > 0:
+            self.apply_clustering_forces(other_particles, dt, amplitude)
         
         # Audio-driven forces
         # Bass creates expansion from center
@@ -165,7 +168,7 @@ class FlowParticle:
         
         # Breathing effect
         self.pulse_phase += self.breathing_rate * dt
-        pulse_factor = 1 + 0.2 * math.sin(self.pulse_phase)
+        pulse_factor = 1 + 0.2 * self.breathing_scale * math.sin(self.pulse_phase)
         self.size = self.base_size * pulse_factor * (0.5 + 0.5 * life_ratio)
         
         # Update trail
@@ -192,7 +195,7 @@ class FlowParticle:
             if distance > 0 and distance < 80:  # Clustering range
                 # Attraction force (organic clustering)
                 attraction_strength = self.cluster_affinity * other.cluster_affinity
-                attraction_force = attraction_strength * 10 / (distance + 1)
+                attraction_force = attraction_strength * 10 / (distance + 1) * self.clustering_scale
                 
                 cluster_force_x += (dx / distance) * attraction_force
                 cluster_force_y += (dy / distance) * attraction_force
@@ -396,6 +399,8 @@ class NeuralFlowPlugin(ArtPlugin):
         # Update existing particles
         for particle in self.particles[:]:
             if particle.is_alive():
+                particle.clustering_scale = self.clustering_strength if self.enable_clustering else 0.0
+                particle.breathing_scale = self.organic_breathing
                 particle.update(dt, self.flow_field, audio_features, 
                               self.surface_size, self.particles)
             else:

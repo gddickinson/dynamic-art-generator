@@ -630,7 +630,8 @@ class BioMechGardenPlugin(ArtPlugin):
             
             # Draw petals
             for i in range(flower.petal_count):
-                petal_angle = (360 / flower.petal_count) * i + flower.servo_angle
+                servo = flower.servo_angle if self.enable_servo_animation else 0
+                petal_angle = (360 / flower.petal_count) * i + servo
                 petal_rad = math.radians(petal_angle)
                 
                 # Petal extends based on bloom state

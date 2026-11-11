@@ -455,6 +455,7 @@ class Predator:
         self.hunger = 0.0  # Increases over time
         self.hunt_radius = 120.0  # How far it can sense prey
         self.kill_radius = 6.0  # How close to kill
+        self.aggression = 1.0  # the plugin's predator_aggression_multiplier
         
         # Visual properties
         self.color_hue = random.uniform(0, 30)  # Red-ish (predator colors)
@@ -538,7 +539,7 @@ class Predator:
             
             # Scale hunt force by intensity and hunger
             intensity_multiplier = 1 + self.hunt_intensity * 0.5 + self.hunger * 0.3
-            hunt_force.mult(intensity_multiplier)
+            hunt_force.mult(intensity_multiplier * self.aggression)
             
             self.apply_force(hunt_force)
         else:
@@ -740,6 +741,9 @@ class MusicalEcosystemPlugin(ArtPlugin):
     def update(self, audio_features: dict, dt: float):
         """Update the entire ecosystem"""
         self.ecosystem_age += dt
+        if 'amplitude' in audio_features:
+            audio_features = {**audio_features,
+                              'amplitude': audio_features['amplitude'] * self.audio_sensitivity}
         
         # Update all boids and collect offspring
         new_boids = []
@@ -769,6 +773,7 @@ class MusicalEcosystemPlugin(ArtPlugin):
         total_kills = 0
         
         for predator in self.predators:
+            predator.aggression = self.predator_aggression_multiplier
             kills = predator.update(dt, self.boids, audio_features, self.surface_size)
             total_kills += kills
             

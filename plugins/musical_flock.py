@@ -146,7 +146,10 @@ class Boid:
 
         # Physical properties
         self.r = 3.0  # Size
-        self.maxspeed = 2.5
+        self.base_maxspeed = 2.5         # set from the plugin's max_speed parameter
+        self.neighbor_dist = 50.0        # set from neighbor_radius
+        self.desired_separation = 25.0   # set from separation_radius
+        self.maxspeed = self.base_maxspeed
         self.maxforce = 0.05
 
         # Visual properties
@@ -209,9 +212,9 @@ class Boid:
 
         # Beats temporarily increase max speed
         if self.beat_response > 0:
-            self.maxspeed = 2.5 + self.beat_response * 1.5
+            self.maxspeed = self.base_maxspeed + self.beat_response * 1.5
         else:
-            self.maxspeed = 2.5
+            self.maxspeed = self.base_maxspeed
 
     def update_trail(self):
         """Update visual trail"""
@@ -274,7 +277,7 @@ class Boid:
 
     def separate(self, boids):
         """Separation: steer to avoid crowding local flockmates"""
-        desired_separation = 25.0
+        desired_separation = self.desired_separation
         steer = Vector2D(0, 0)
         count = 0
 
@@ -299,7 +302,7 @@ class Boid:
 
     def align(self, boids):
         """Alignment: steer towards average heading of neighbors"""
-        neighbor_dist = 50
+        neighbor_dist = self.neighbor_dist
         sum_vel = Vector2D(0, 0)
         count = 0
 
@@ -321,7 +324,7 @@ class Boid:
 
     def cohesion(self, boids):
         """Cohesion: steer to move toward average position of neighbors"""
-        neighbor_dist = 50
+        neighbor_dist = self.neighbor_dist
         sum_pos = Vector2D(0, 0)
         count = 0
 
@@ -488,6 +491,9 @@ class MusicalFlockPlugin(ArtPlugin):
                 'frequency_bands': audio_features.get('frequency_bands', {'bass': 0, 'mid': 0, 'treble': 0})
             }
 
+            boid.base_maxspeed = self.max_speed
+            boid.neighbor_dist = self.neighbor_radius
+            boid.desired_separation = self.separation_radius
             boid.run(self.boids, scaled_audio, self.surface_size)
 
     def spawn_boid_at_random_location(self):

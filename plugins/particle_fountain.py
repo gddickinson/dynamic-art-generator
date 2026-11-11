@@ -286,6 +286,9 @@ class ParticleFountainPlugin(ArtPlugin):
         
         for _ in range(int(self.num_particles)):
             particle = FountainParticle(self.emitter_x, self.emitter_y)
+            # Keep the gravity_strength / wind_force settings for the new particles
+            particle.gravity.y = 0.15 * self.gravity_strength
+            particle.gravity.x = 0.15 * self.wind_force
             # Stagger initial lifespans for smooth startup
             particle.lifespan = random.uniform(0, 255)
             self.particles.append(particle)
@@ -584,6 +587,11 @@ class ParticleFountainPlugin(ArtPlugin):
             elif name == 'gravity_strength':
                 for particle in self.particles:
                     particle.gravity.y = 0.15 * self.gravity_strength
+
+            # Wind: a constant sideways acceleration on the same scale as gravity_strength
+            elif name == 'wind_force':
+                for particle in self.particles:
+                    particle.gravity.x = 0.15 * self.wind_force
     
     def reset(self):
         """Reset plugin to initial state"""

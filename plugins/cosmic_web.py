@@ -58,6 +58,7 @@ class CosmicOrb:
         self.vx = random.uniform(-20, 20)
         self.vy = random.uniform(-20, 20)
         self.mass = mass
+        self.gravity_scale = 1.0  # the plugin's gravity_strength parameter
         self.base_radius = 10 + mass * 5
         self.radius = self.base_radius
         self.energy = 0.0  # Audio energy accumulator
@@ -110,7 +111,7 @@ class CosmicOrb:
             if distance > 0:
                 # Gravitational attraction (but not too strong)
                 force_magnitude = (self.mass * other.mass) / (distance*distance + 100)
-                force_magnitude *= 0.5  # Reduce strength
+                force_magnitude *= 0.5 * self.gravity_scale  # Reduce strength
 
                 force_x += force_magnitude * (dx / distance)
                 force_y += force_magnitude * (dy / distance)
@@ -391,6 +392,7 @@ class CosmicWebPlugin(ArtPlugin):
                 }
             }
 
+            orb.gravity_scale = self.gravity_strength
             orb.update(dt, self.orbs, scaled_audio, self.surface_size)
 
         # Update background stars
