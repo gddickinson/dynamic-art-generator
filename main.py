@@ -33,6 +33,7 @@ except ImportError:
 try:
     from utils.audio_utils import AudioAnalyzer, DrumMachine, AudioSmoother
     from utils.math_utils import Vector2D, ColorUtils, GeometryUtils
+    from utils.desktop_features import desktop_audio_features
     UTILS_AVAILABLE = True
 except ImportError:
     UTILS_AVAILABLE = False
@@ -59,6 +60,9 @@ class AudioProcessor:
         self.beat_detected = False
         self.amplitude = 0.0
         self.frequency = 0.0
+        # AudioAnalyzer adds the features the plugins read (dominant_frequency, frequency_bands, ...)
+        self.analyzer = AudioAnalyzer(sample_rate, chunk_size) if UTILS_AVAILABLE else None
+        self.extra_features = {}
 
         if AUDIO_AVAILABLE:
             try:
@@ -91,6 +95,14 @@ class AudioProcessor:
         try:
             audio_data = np.frombuffer(in_data, dtype=np.float32)
             self.audio_data = audio_data
+
+            if UTILS_AVAILABLE:
+                features = desktop_audio_features(audio_data, self.sample_rate, self.analyzer)
+                self.amplitude = features['amplitude']
+                self.beat_detected = features['beat_detected']
+                self.frequency = features['frequency']
+                self.extra_features = {k: v for k, v in features.items() if k != 'raw_data'}
+                return (in_data, pyaudio.paContinue)
 
             # Calculate amplitude
             self.amplitude = np.sqrt(np.mean(audio_data**2))
@@ -125,6 +137,7 @@ class AudioProcessor:
     def get_audio_features(self):
         """Get current audio features"""
         return {
+            **self.extra_features,
             'amplitude': self.amplitude,
             'frequency': self.frequency,
             'beat_detected': self.beat_detected,
