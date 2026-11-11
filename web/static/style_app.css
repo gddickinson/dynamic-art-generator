@@ -1,0 +1,22 @@
+/* Dynamic Art Generator accents (amber / rose / violet) and page styles. */
+:root { --accent:#ffb23f; --accent2:#ff4f8b; --accent3:#7d6bff; --glow:rgba(255,178,63,.14); }
+button, .btn, .seg button.on { color:#1a0f00; }
+.fig { margin:0; }
+.fig canvas { width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:6px; background:#000; }
+.vis-head { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; }
+.vis-head h1 { margin-bottom:0; }
+.srcbar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:10px 0 8px; }
+.srcbar > button, .srcbar .seg button { margin:0; }
+.studio { display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:16px; align-items:start; }
+.side-panel { margin:0; max-height:calc(100vh - 120px); overflow-y:auto; }
+.side-panel h3 { margin-top:16px; }
+.ctl.chk label { display:flex; gap:8px; align-items:center; color:var(--ink); }
+.art:fullscreen { display:flex; align-items:center; justify-content:center; border:0; border-radius:0; }
+.art:fullscreen canvas { width:100%; height:100%; object-fit:contain; }
+.meters { display:block; width:100%; height:auto; margin-top:8px; border:1px solid var(--line); border-radius:4px; }
+.door b { color:var(--accent); }
+.pcard { display:flex; flex-direction:column; gap:6px; }
+.pcard canvas { width:100%; height:auto; border-radius:4px; background:#000; }
+.pcard .params { font:11px var(--mono); color:var(--mute); }
+td.ok { color:var(--good); } td.err { color:var(--bad); }
+@media (max-width:900px) { .studio { grid-template-columns:1fr; } .side-panel { max-height:none; } }

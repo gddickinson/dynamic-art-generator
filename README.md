@@ -270,3 +270,29 @@ This project draws inspiration from:
 ---
 
 *Create beautiful, responsive art that dances to the rhythm of sound!*
+
+## Web interface and static site
+
+**Live:** https://gddickinson.github.io/dynamic-art-generator/ (published from `main` by `.github/workflows/pages.yml`).
+
+The site *is* the app: all 13 plugins are ported to JavaScript and run in your browser, driven by a port of the audio
+analysis. Pick a plugin or an example preset, feed it the built-in demo signal (the DrumMachine's kick, snare and
+hi-hat at 120 BPM with a gliding tone), an audio file, your microphone (after a click; nothing is uploaded) or the
+simulated features of `launcher.py`, adjust the parameters and save PNG snapshots. The Verify page compares the JS
+audio analysis and plugin parameters with the Python code in your browser.
+
+| Home | Studio (Cosmic Web) |
+|------|---------------------|
+| ![Home page](docs/img/home.png) | ![Studio with Cosmic Web](docs/img/studio_cosmic_web.png) |
+| **Plugins** | **Verify** |
+| ![Plugin gallery](docs/img/plugins.png) | ![JS vs Python checks](docs/img/verify.png) |
+
+### Run the web app
+```bash
+pip install -r requirements-web.txt
+python run_web.py                 # http://127.0.0.1:8112
+python -m pytest -q tests         # Python, API and node tests (node 22)
+python scripts/build_static.py    # static site in site/
+```
+After changing a plugin or the audio analysis, mirror the change in `web/static/` and run
+`python scripts/make_fixtures.py`; see `INTERFACE.md` for the file map.

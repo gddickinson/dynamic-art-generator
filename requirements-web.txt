@@ -1,0 +1,7 @@
+# Web interface (python run_web.py) and the static-site build/tests
+fastapi==0.162.2
+httpx==0.28.1
+pytest==9.2.0
+uvicorn==0.54.0
+numpy==2.5.4
+pygame==2.6.1

@@ -1,0 +1,3244 @@
+{
+ "catalog": [
+  {
+   "name": "Pendulum",
+   "class": "PendulumPlugin",
+   "description": "Elliptical pendulum trails that respond to audio",
+   "version": "1.0",
+   "source": "plugins/pendulum.py",
+   "doc": "Pendulum art plugin - creates paint-can-like effects",
+   "parameters": {
+    "gravity": 9.81,
+    "damping": 0.999,
+    "ellipse_a": 150,
+    "ellipse_b": 100,
+    "audio_sensitivity": 1.0,
+    "trail_length": 500,
+    "line_width": 2,
+    "color_cycle_speed": 1.0,
+    "color_saturation": 0.8,
+    "color_brightness": 0.9
+   }
+  },
+  {
+   "name": "Bio-Mechanical Garden",
+   "class": "BioMechGardenPlugin",
+   "description": "Cyberpunk technology merging with organic plant growth",
+   "version": "1.0",
+   "source": "plugins/biomech_garden.py",
+   "doc": "Bio-Mechanical Garden Plugin - Where nature meets cyberpunk",
+   "parameters": {
+    "max_vines": 12,
+    "max_flowers": 8,
+    "audio_sensitivity": 1.0,
+    "growth_threshold": 0.3,
+    "bloom_sensitivity": 1.2,
+    "data_flow_rate": 1.0,
+    "enable_bio_glow": true,
+    "enable_data_flow": true,
+    "enable_particle_effects": true,
+    "enable_servo_animation": true
+   }
+  },
+  {
+   "name": "Cosmic Web",
+   "class": "CosmicWebPlugin",
+   "description": "Gravitational orbs forming a living cosmic network",
+   "version": "1.0",
+   "source": "plugins/cosmic_web.py",
+   "doc": "Cosmic Web Plugin - Creates a living galaxy of interconnected orbs",
+   "parameters": {
+    "num_orbs": 8,
+    "audio_sensitivity": 1.0,
+    "beat_amplification": 3.0,
+    "gravity_strength": 1.0,
+    "expansion_force": 0.5,
+    "swirl_force": 0.3,
+    "connection_opacity": 0.7,
+    "hue_shift_speed": 20,
+    "color_variance": 60,
+    "enable_trails": true,
+    "enable_particles": true,
+    "enable_connections": true,
+    "enable_stars": true
+   }
+  },
+  {
+   "name": "Digital Spectre",
+   "class": "DigitalSpectrePlugin",
+   "description": "AI consciousness manifesting as dark geometric forms",
+   "version": "1.0",
+   "source": "plugins/digital_spectre.py",
+   "doc": "Digital Spectre Plugin - AI consciousness emerging from the void",
+   "parameters": {
+    "max_monoliths": 6,
+    "max_smoke_particles": 800,
+    "audio_sensitivity": 1.2,
+    "beat_amplification": 2.5,
+    "smoke_opacity": 0.7,
+    "monolith_opacity": 0.8,
+    "scan_intensity": 0.5,
+    "glitch_frequency": 0.02,
+    "neural_activity": 0.3,
+    "enable_smoke": true,
+    "enable_scanning": true,
+    "enable_glitches": true,
+    "enable_neural_grid": true
+   }
+  },
+  {
+   "name": "Musical Ecosystem",
+   "class": "MusicalEcosystemPlugin",
+   "description": "Living predator-prey ecosystem dancing to music",
+   "version": "1.0",
+   "source": "plugins/ecosystem.py",
+   "doc": "Musical Ecosystem Plugin - Living predator-prey system",
+   "parameters": {
+    "initial_boids": 40,
+    "num_predators": 2,
+    "audio_sensitivity": 1.0,
+    "reproduction_rate_multiplier": 1.0,
+    "predator_aggression_multiplier": 1.0,
+    "trail_opacity": 0.7,
+    "show_trails": true,
+    "show_hunt_radius": false,
+    "auto_spawn_predators": true,
+    "auto_spawn_boids": true
+   }
+  },
+  {
+   "name": "Musical Flock",
+   "class": "MusicalFlockPlugin",
+   "description": "Flocking boids that dance to music",
+   "version": "1.0",
+   "source": "plugins/musical_flock.py",
+   "doc": "Musical Flock Plugin - Craig Reynolds' Boids with Audio Response",
+   "parameters": {
+    "num_boids": 60,
+    "audio_sensitivity": 1.0,
+    "neighbor_radius": 50,
+    "separation_radius": 25,
+    "max_speed": 2.5,
+    "trail_opacity": 0.6,
+    "boid_size_multiplier": 1.0,
+    "color_cycle_speed": 30,
+    "hue_spread": 60,
+    "show_trails": true,
+    "enable_beat_spawning": true,
+    "enable_audio_forces": true
+   }
+  },
+  {
+   "name": "Neural Flow",
+   "class": "NeuralFlowPlugin",
+   "description": "Organic particle networks inspired by AMIANGELIKA",
+   "version": "1.0",
+   "source": "plugins/neural_flow.py",
+   "doc": "Neural Flow Plugin - AMIANGELIKA inspired organic particle networks",
+   "parameters": {
+    "max_particles": 800,
+    "spawn_rate": 30,
+    "clustering_strength": 1.0,
+    "flow_turbulence": 0.3,
+    "organic_breathing": 1.0,
+    "particle_opacity": 0.8,
+    "connection_threshold": 60,
+    "glow_intensity": 0.6,
+    "audio_sensitivity": 1.2,
+    "beat_response_strength": 2.0,
+    "color_variance": 30,
+    "monochrome_mode": true,
+    "enable_clustering": true,
+    "enable_flow_field": true,
+    "enable_connections": true
+   }
+  },
+  {
+   "name": "Noise Sphere",
+   "class": "NoiseSpherePlugin",
+   "description": "3D hairy sphere with organic Perlin noise movement",
+   "version": "1.0",
+   "source": "plugins/noise_sphere.py",
+   "doc": "Noise Sphere Plugin - Creates a mesmerizing 3D hairy sphere",
+   "parameters": {
+    "hair_count": 8000,
+    "radius": 171.42857142857142,
+    "audio_sensitivity": 1.0,
+    "beat_sensitivity": 2.0,
+    "frequency_response": 1.0,
+    "noise_speed": 1.0,
+    "rotation_speed": 1.0,
+    "auto_rotate": true,
+    "show_sphere": true,
+    "rainbow_mode": true,
+    "hair_alpha": 150,
+    "hue_shift_speed": 30
+   }
+  },
+  {
+   "name": "Particle Fountain",
+   "class": "ParticleFountainPlugin",
+   "description": "High-performance fountain of thousands of particles",
+   "version": "1.0",
+   "source": "plugins/particle_fountain.py",
+   "doc": "Particle Fountain Plugin - High-performance particle system",
+   "parameters": {
+    "num_particles": 5000,
+    "audio_sensitivity": 1.0,
+    "gravity_strength": 1.0,
+    "wind_force": 0.0,
+    "turbulence": 0.1,
+    "bass_lift": 1.0,
+    "treble_spread": 1.0,
+    "base_hue": 200,
+    "glow_effect": true,
+    "fade_trails": true
+   }
+  },
+  {
+   "name": "Particles",
+   "class": "ParticlePlugin",
+   "description": "Dynamic particle systems that respond to audio",
+   "version": "1.0",
+   "source": "plugins/particles.py",
+   "doc": "Particle system plugin - creates sand/smoke-like effects",
+   "parameters": {
+    "max_particles": 1000,
+    "spawn_rate": 50,
+    "particle_life": 3.0,
+    "particle_speed": 50,
+    "gravity": 20,
+    "wind": 0,
+    "turbulence": 10,
+    "attraction": 0,
+    "audio_sensitivity": 1.0,
+    "shape_size": 100,
+    "color_cycle_speed": 30,
+    "color_saturation": 0.7,
+    "color_brightness": 0.9,
+    "show_shape_outline": true
+   }
+  },
+  {
+   "name": "Quantum Jazz",
+   "class": "QuantumJazzPlugin",
+   "description": "Quantum physics meets jazz improvisation",
+   "version": "1.0",
+   "source": "plugins/quantum_jazz.py",
+   "doc": "Quantum Jazz Plugin - Where physics meets improvisation",
+   "parameters": {
+    "max_particles": 15,
+    "particle_creation_rate": 0.3,
+    "improvisation_intensity": 0.7,
+    "rhythm_complexity": 1.0,
+    "audio_sensitivity": 1.2,
+    "beat_observation_strength": 2.0,
+    "quantum_coherence_time": 5.0,
+    "show_uncertainty": true,
+    "show_probability_waves": true,
+    "show_entanglement": true,
+    "show_particle_trails": true,
+    "enable_jazz_improvisation": true
+   }
+  },
+  {
+   "name": "Rehoboam",
+   "class": "RehoboamPlugin",
+   "description": "Westworld-inspired AI network visualization",
+   "version": "1.0",
+   "source": "plugins/rehoboam.py",
+   "doc": "Rehoboam Plugin - Creates Westworld-inspired AI visualization",
+   "parameters": {
+    "num_rings": 6,
+    "audio_sensitivity": 1.0,
+    "beat_response_strength": 1.5,
+    "network_activity_level": 0.5,
+    "prediction_frequency": 0.3,
+    "data_flow_speed": 1.0,
+    "frequency_color_shift": 0.3,
+    "geometric_precision": 1.0
+   }
+  },
+  {
+   "name": "Space Junk",
+   "class": "SpaceJunkPlugin",
+   "description": "3D rotating cubes floating in audio-responsive space",
+   "version": "1.0",
+   "source": "plugins/space_junk.py",
+   "doc": "Space Junk Plugin - 3D rotating cubes in space",
+   "parameters": {
+    "cube_count": 150,
+    "audio_sensitivity": 1.0,
+    "rotation_speed": 1.0,
+    "zoom_sensitivity": 1.0,
+    "ambient_light": 0.7,
+    "enable_depth_sorting": true,
+    "enable_lighting": true,
+    "enable_trails": false,
+    "position_range": 140
+   }
+  }
+ ],
+ "set_cases": [
+  {
+   "plugin": "Pendulum",
+   "param": "gravity",
+   "value": 19.62,
+   "after": {
+    "gravity": 19.62
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "gravity",
+   "value": 3.6297,
+   "after": {
+    "gravity": 3.6297
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "gravity",
+   "value": 0.0,
+   "after": {
+    "gravity": 0.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "damping",
+   "value": 1.998,
+   "after": {
+    "damping": 1.998
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "damping",
+   "value": 0.36963,
+   "after": {
+    "damping": 0.36963
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "damping",
+   "value": 0.0,
+   "after": {
+    "damping": 0.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "ellipse_a",
+   "value": 300.0,
+   "after": {
+    "ellipse_a": 300.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "ellipse_a",
+   "value": 55.5,
+   "after": {
+    "ellipse_a": 55.5
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "ellipse_a",
+   "value": 0.0,
+   "after": {
+    "ellipse_a": 10
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "ellipse_b",
+   "value": 200.0,
+   "after": {
+    "ellipse_b": 200.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "ellipse_b",
+   "value": 37.0,
+   "after": {
+    "ellipse_b": 37.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "ellipse_b",
+   "value": 0.0,
+   "after": {
+    "ellipse_b": 10
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "trail_length",
+   "value": 1000.0,
+   "after": {
+    "trail_length": 1000.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "trail_length",
+   "value": 185.0,
+   "after": {
+    "trail_length": 185.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "trail_length",
+   "value": 0.0,
+   "after": {
+    "trail_length": 0.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "line_width",
+   "value": 4.0,
+   "after": {
+    "line_width": 4
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "line_width",
+   "value": 0.74,
+   "after": {
+    "line_width": 1
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "line_width",
+   "value": 0.0,
+   "after": {
+    "line_width": 1
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_cycle_speed",
+   "value": 2.0,
+   "after": {
+    "color_cycle_speed": 2.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_cycle_speed",
+   "value": 0.37,
+   "after": {
+    "color_cycle_speed": 0.37
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_cycle_speed",
+   "value": 0.0,
+   "after": {
+    "color_cycle_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_saturation",
+   "value": 1.6,
+   "after": {
+    "color_saturation": 1.6
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_saturation",
+   "value": 0.296,
+   "after": {
+    "color_saturation": 0.296
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_saturation",
+   "value": 0.0,
+   "after": {
+    "color_saturation": 0.0
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_brightness",
+   "value": 1.8,
+   "after": {
+    "color_brightness": 1.8
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_brightness",
+   "value": 0.333,
+   "after": {
+    "color_brightness": 0.333
+   }
+  },
+  {
+   "plugin": "Pendulum",
+   "param": "color_brightness",
+   "value": 0.0,
+   "after": {
+    "color_brightness": 0.0
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "max_vines",
+   "value": 24.0,
+   "after": {
+    "max_vines": 24
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "max_vines",
+   "value": 4.4399999999999995,
+   "after": {
+    "max_vines": 4
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "max_vines",
+   "value": 0.0,
+   "after": {
+    "max_vines": 2
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "max_flowers",
+   "value": 16.0,
+   "after": {
+    "max_flowers": 16
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "max_flowers",
+   "value": 2.96,
+   "after": {
+    "max_flowers": 2
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "max_flowers",
+   "value": 0.0,
+   "after": {
+    "max_flowers": 1
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "growth_threshold",
+   "value": 0.6,
+   "after": {
+    "growth_threshold": 0.6
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "growth_threshold",
+   "value": 0.111,
+   "after": {
+    "growth_threshold": 0.111
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "growth_threshold",
+   "value": 0.0,
+   "after": {
+    "growth_threshold": 0.0
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "bloom_sensitivity",
+   "value": 2.4,
+   "after": {
+    "bloom_sensitivity": 2.4
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "bloom_sensitivity",
+   "value": 0.444,
+   "after": {
+    "bloom_sensitivity": 0.444
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "bloom_sensitivity",
+   "value": 0.0,
+   "after": {
+    "bloom_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "data_flow_rate",
+   "value": 2.0,
+   "after": {
+    "data_flow_rate": 2.0
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "data_flow_rate",
+   "value": 0.37,
+   "after": {
+    "data_flow_rate": 0.37
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "data_flow_rate",
+   "value": 0.0,
+   "after": {
+    "data_flow_rate": 0.0
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "enable_bio_glow",
+   "value": false,
+   "after": {
+    "enable_bio_glow": false
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "enable_data_flow",
+   "value": false,
+   "after": {
+    "enable_data_flow": false
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "enable_particle_effects",
+   "value": false,
+   "after": {
+    "enable_particle_effects": false
+   }
+  },
+  {
+   "plugin": "Bio-Mechanical Garden",
+   "param": "enable_servo_animation",
+   "value": false,
+   "after": {
+    "enable_servo_animation": false
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "num_orbs",
+   "value": 16.0,
+   "after": {
+    "num_orbs": 16
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "num_orbs",
+   "value": 2.96,
+   "after": {
+    "num_orbs": 2
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "num_orbs",
+   "value": 0.0,
+   "after": {
+    "num_orbs": 2
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "beat_amplification",
+   "value": 6.0,
+   "after": {
+    "beat_amplification": 6.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "beat_amplification",
+   "value": 1.1099999999999999,
+   "after": {
+    "beat_amplification": 1.1099999999999999
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "beat_amplification",
+   "value": 0.0,
+   "after": {
+    "beat_amplification": 0.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "gravity_strength",
+   "value": 2.0,
+   "after": {
+    "gravity_strength": 2.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "gravity_strength",
+   "value": 0.37,
+   "after": {
+    "gravity_strength": 0.37
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "gravity_strength",
+   "value": 0.0,
+   "after": {
+    "gravity_strength": 0.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "expansion_force",
+   "value": 1.0,
+   "after": {
+    "expansion_force": 1.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "expansion_force",
+   "value": 0.185,
+   "after": {
+    "expansion_force": 0.185
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "expansion_force",
+   "value": 0.0,
+   "after": {
+    "expansion_force": 0.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "swirl_force",
+   "value": 0.6,
+   "after": {
+    "swirl_force": 0.6
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "swirl_force",
+   "value": 0.111,
+   "after": {
+    "swirl_force": 0.111
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "swirl_force",
+   "value": 0.0,
+   "after": {
+    "swirl_force": 0.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "connection_opacity",
+   "value": 1.4,
+   "after": {
+    "connection_opacity": 1
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "connection_opacity",
+   "value": 0.259,
+   "after": {
+    "connection_opacity": 0.259
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "connection_opacity",
+   "value": 0.0,
+   "after": {
+    "connection_opacity": 0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "hue_shift_speed",
+   "value": 40.0,
+   "after": {
+    "hue_shift_speed": 40.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "hue_shift_speed",
+   "value": 7.4,
+   "after": {
+    "hue_shift_speed": 7.4
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "hue_shift_speed",
+   "value": 0.0,
+   "after": {
+    "hue_shift_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "color_variance",
+   "value": 120.0,
+   "after": {
+    "color_variance": 120.0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "color_variance",
+   "value": 22.2,
+   "after": {
+    "color_variance": 22.2
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "color_variance",
+   "value": 0.0,
+   "after": {
+    "color_variance": 0
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "enable_trails",
+   "value": false,
+   "after": {
+    "enable_trails": false
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "enable_particles",
+   "value": false,
+   "after": {
+    "enable_particles": false
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "enable_connections",
+   "value": false,
+   "after": {
+    "enable_connections": false
+   }
+  },
+  {
+   "plugin": "Cosmic Web",
+   "param": "enable_stars",
+   "value": false,
+   "after": {
+    "enable_stars": false
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "max_monoliths",
+   "value": 12.0,
+   "after": {
+    "max_monoliths": 12
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "max_monoliths",
+   "value": 2.2199999999999998,
+   "after": {
+    "max_monoliths": 2
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "max_monoliths",
+   "value": 0.0,
+   "after": {
+    "max_monoliths": 2
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "max_smoke_particles",
+   "value": 1600.0,
+   "after": {
+    "max_smoke_particles": 1600
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "max_smoke_particles",
+   "value": 296.0,
+   "after": {
+    "max_smoke_particles": 296
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "max_smoke_particles",
+   "value": 0.0,
+   "after": {
+    "max_smoke_particles": 50
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "audio_sensitivity",
+   "value": 2.4,
+   "after": {
+    "audio_sensitivity": 2.4
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "audio_sensitivity",
+   "value": 0.444,
+   "after": {
+    "audio_sensitivity": 0.444
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "beat_amplification",
+   "value": 5.0,
+   "after": {
+    "beat_amplification": 5.0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "beat_amplification",
+   "value": 0.925,
+   "after": {
+    "beat_amplification": 0.925
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "beat_amplification",
+   "value": 0.0,
+   "after": {
+    "beat_amplification": 0.0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "smoke_opacity",
+   "value": 1.4,
+   "after": {
+    "smoke_opacity": 1
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "smoke_opacity",
+   "value": 0.259,
+   "after": {
+    "smoke_opacity": 0.259
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "smoke_opacity",
+   "value": 0.0,
+   "after": {
+    "smoke_opacity": 0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "monolith_opacity",
+   "value": 1.6,
+   "after": {
+    "monolith_opacity": 1
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "monolith_opacity",
+   "value": 0.296,
+   "after": {
+    "monolith_opacity": 0.296
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "monolith_opacity",
+   "value": 0.0,
+   "after": {
+    "monolith_opacity": 0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "scan_intensity",
+   "value": 1.0,
+   "after": {
+    "scan_intensity": 1
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "scan_intensity",
+   "value": 0.185,
+   "after": {
+    "scan_intensity": 0.185
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "scan_intensity",
+   "value": 0.0,
+   "after": {
+    "scan_intensity": 0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "glitch_frequency",
+   "value": 0.04,
+   "after": {
+    "glitch_frequency": 0.04
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "glitch_frequency",
+   "value": 0.0074,
+   "after": {
+    "glitch_frequency": 0.0074
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "glitch_frequency",
+   "value": 0.0,
+   "after": {
+    "glitch_frequency": 0.0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "neural_activity",
+   "value": 0.6,
+   "after": {
+    "neural_activity": 0.6
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "neural_activity",
+   "value": 0.111,
+   "after": {
+    "neural_activity": 0.111
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "neural_activity",
+   "value": 0.0,
+   "after": {
+    "neural_activity": 0.0
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "enable_smoke",
+   "value": false,
+   "after": {
+    "enable_smoke": false
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "enable_scanning",
+   "value": false,
+   "after": {
+    "enable_scanning": false
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "enable_glitches",
+   "value": false,
+   "after": {
+    "enable_glitches": false
+   }
+  },
+  {
+   "plugin": "Digital Spectre",
+   "param": "enable_neural_grid",
+   "value": false,
+   "after": {
+    "enable_neural_grid": false
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "initial_boids",
+   "value": 80.0,
+   "after": {
+    "initial_boids": 80.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "initial_boids",
+   "value": 14.8,
+   "after": {
+    "initial_boids": 14.8
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "initial_boids",
+   "value": 0.0,
+   "after": {
+    "initial_boids": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "num_predators",
+   "value": 4.0,
+   "after": {
+    "num_predators": 4
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "num_predators",
+   "value": 0.74,
+   "after": {
+    "num_predators": 1
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "num_predators",
+   "value": 0.0,
+   "after": {
+    "num_predators": 1
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "reproduction_rate_multiplier",
+   "value": 2.0,
+   "after": {
+    "reproduction_rate_multiplier": 2.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "reproduction_rate_multiplier",
+   "value": 0.37,
+   "after": {
+    "reproduction_rate_multiplier": 0.37
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "reproduction_rate_multiplier",
+   "value": 0.0,
+   "after": {
+    "reproduction_rate_multiplier": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "predator_aggression_multiplier",
+   "value": 2.0,
+   "after": {
+    "predator_aggression_multiplier": 2.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "predator_aggression_multiplier",
+   "value": 0.37,
+   "after": {
+    "predator_aggression_multiplier": 0.37
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "predator_aggression_multiplier",
+   "value": 0.0,
+   "after": {
+    "predator_aggression_multiplier": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "trail_opacity",
+   "value": 1.4,
+   "after": {
+    "trail_opacity": 1.4
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "trail_opacity",
+   "value": 0.259,
+   "after": {
+    "trail_opacity": 0.259
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "trail_opacity",
+   "value": 0.0,
+   "after": {
+    "trail_opacity": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "show_trails",
+   "value": false,
+   "after": {
+    "show_trails": false
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "show_hunt_radius",
+   "value": true,
+   "after": {
+    "show_hunt_radius": true
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "auto_spawn_predators",
+   "value": false,
+   "after": {
+    "auto_spawn_predators": false
+   }
+  },
+  {
+   "plugin": "Musical Ecosystem",
+   "param": "auto_spawn_boids",
+   "value": false,
+   "after": {
+    "auto_spawn_boids": false
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "num_boids",
+   "value": 120.0,
+   "after": {
+    "num_boids": 120
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "num_boids",
+   "value": 22.2,
+   "after": {
+    "num_boids": 22
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "num_boids",
+   "value": 0.0,
+   "after": {
+    "num_boids": 5
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "neighbor_radius",
+   "value": 100.0,
+   "after": {
+    "neighbor_radius": 100.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "neighbor_radius",
+   "value": 18.5,
+   "after": {
+    "neighbor_radius": 18.5
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "neighbor_radius",
+   "value": 0.0,
+   "after": {
+    "neighbor_radius": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "separation_radius",
+   "value": 50.0,
+   "after": {
+    "separation_radius": 50.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "separation_radius",
+   "value": 9.25,
+   "after": {
+    "separation_radius": 9.25
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "separation_radius",
+   "value": 0.0,
+   "after": {
+    "separation_radius": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "max_speed",
+   "value": 5.0,
+   "after": {
+    "max_speed": 5.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "max_speed",
+   "value": 0.925,
+   "after": {
+    "max_speed": 0.925
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "max_speed",
+   "value": 0.0,
+   "after": {
+    "max_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "trail_opacity",
+   "value": 1.2,
+   "after": {
+    "trail_opacity": 1.2
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "trail_opacity",
+   "value": 0.222,
+   "after": {
+    "trail_opacity": 0.222
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "trail_opacity",
+   "value": 0.0,
+   "after": {
+    "trail_opacity": 0.1
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "boid_size_multiplier",
+   "value": 2.0,
+   "after": {
+    "boid_size_multiplier": 2.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "boid_size_multiplier",
+   "value": 0.37,
+   "after": {
+    "boid_size_multiplier": 0.37
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "boid_size_multiplier",
+   "value": 0.0,
+   "after": {
+    "boid_size_multiplier": 0.1
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "color_cycle_speed",
+   "value": 60.0,
+   "after": {
+    "color_cycle_speed": 60.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "color_cycle_speed",
+   "value": 11.1,
+   "after": {
+    "color_cycle_speed": 11.1
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "color_cycle_speed",
+   "value": 0.0,
+   "after": {
+    "color_cycle_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "hue_spread",
+   "value": 120.0,
+   "after": {
+    "hue_spread": 120.0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "hue_spread",
+   "value": 22.2,
+   "after": {
+    "hue_spread": 22.2
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "hue_spread",
+   "value": 0.0,
+   "after": {
+    "hue_spread": 0
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "show_trails",
+   "value": false,
+   "after": {
+    "show_trails": false
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "enable_beat_spawning",
+   "value": false,
+   "after": {
+    "enable_beat_spawning": false
+   }
+  },
+  {
+   "plugin": "Musical Flock",
+   "param": "enable_audio_forces",
+   "value": false,
+   "after": {
+    "enable_audio_forces": false
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "max_particles",
+   "value": 1600.0,
+   "after": {
+    "max_particles": 1600
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "max_particles",
+   "value": 296.0,
+   "after": {
+    "max_particles": 296
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "max_particles",
+   "value": 0.0,
+   "after": {
+    "max_particles": 50
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "spawn_rate",
+   "value": 60.0,
+   "after": {
+    "spawn_rate": 60.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "spawn_rate",
+   "value": 11.1,
+   "after": {
+    "spawn_rate": 11.1
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "spawn_rate",
+   "value": 0.0,
+   "after": {
+    "spawn_rate": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "clustering_strength",
+   "value": 2.0,
+   "after": {
+    "clustering_strength": 2.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "clustering_strength",
+   "value": 0.37,
+   "after": {
+    "clustering_strength": 0.37
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "clustering_strength",
+   "value": 0.0,
+   "after": {
+    "clustering_strength": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "flow_turbulence",
+   "value": 0.6,
+   "after": {
+    "flow_turbulence": 0.6
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "flow_turbulence",
+   "value": 0.111,
+   "after": {
+    "flow_turbulence": 0.111
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "flow_turbulence",
+   "value": 0.0,
+   "after": {
+    "flow_turbulence": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "organic_breathing",
+   "value": 2.0,
+   "after": {
+    "organic_breathing": 2.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "organic_breathing",
+   "value": 0.37,
+   "after": {
+    "organic_breathing": 0.37
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "organic_breathing",
+   "value": 0.0,
+   "after": {
+    "organic_breathing": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "particle_opacity",
+   "value": 1.6,
+   "after": {
+    "particle_opacity": 1
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "particle_opacity",
+   "value": 0.296,
+   "after": {
+    "particle_opacity": 0.296
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "particle_opacity",
+   "value": 0.0,
+   "after": {
+    "particle_opacity": 0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "connection_threshold",
+   "value": 120.0,
+   "after": {
+    "connection_threshold": 120.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "connection_threshold",
+   "value": 22.2,
+   "after": {
+    "connection_threshold": 22.2
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "connection_threshold",
+   "value": 0.0,
+   "after": {
+    "connection_threshold": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "glow_intensity",
+   "value": 1.2,
+   "after": {
+    "glow_intensity": 1
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "glow_intensity",
+   "value": 0.222,
+   "after": {
+    "glow_intensity": 0.222
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "glow_intensity",
+   "value": 0.0,
+   "after": {
+    "glow_intensity": 0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "audio_sensitivity",
+   "value": 2.4,
+   "after": {
+    "audio_sensitivity": 2.4
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "audio_sensitivity",
+   "value": 0.444,
+   "after": {
+    "audio_sensitivity": 0.444
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "beat_response_strength",
+   "value": 4.0,
+   "after": {
+    "beat_response_strength": 4.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "beat_response_strength",
+   "value": 0.74,
+   "after": {
+    "beat_response_strength": 0.74
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "beat_response_strength",
+   "value": 0.0,
+   "after": {
+    "beat_response_strength": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "color_variance",
+   "value": 60.0,
+   "after": {
+    "color_variance": 60.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "color_variance",
+   "value": 11.1,
+   "after": {
+    "color_variance": 11.1
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "color_variance",
+   "value": 0.0,
+   "after": {
+    "color_variance": 0.0
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "monochrome_mode",
+   "value": false,
+   "after": {
+    "monochrome_mode": false
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "enable_clustering",
+   "value": false,
+   "after": {
+    "enable_clustering": false
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "enable_flow_field",
+   "value": false,
+   "after": {
+    "enable_flow_field": false
+   }
+  },
+  {
+   "plugin": "Neural Flow",
+   "param": "enable_connections",
+   "value": false,
+   "after": {
+    "enable_connections": false
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hair_count",
+   "value": 16000.0,
+   "after": {
+    "hair_count": 16000
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hair_count",
+   "value": 2960.0,
+   "after": {
+    "hair_count": 2960
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hair_count",
+   "value": 0.0,
+   "after": {
+    "hair_count": 100
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "radius",
+   "value": 342.85714285714283,
+   "after": {
+    "radius": 300.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "radius",
+   "value": 63.42857142857142,
+   "after": {
+    "radius": 63.42857142857142
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "radius",
+   "value": 0.0,
+   "after": {
+    "radius": 50
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "beat_sensitivity",
+   "value": 4.0,
+   "after": {
+    "beat_sensitivity": 4.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "beat_sensitivity",
+   "value": 0.74,
+   "after": {
+    "beat_sensitivity": 0.74
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "beat_sensitivity",
+   "value": 0.0,
+   "after": {
+    "beat_sensitivity": 0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "frequency_response",
+   "value": 2.0,
+   "after": {
+    "frequency_response": 2.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "frequency_response",
+   "value": 0.37,
+   "after": {
+    "frequency_response": 0.37
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "frequency_response",
+   "value": 0.0,
+   "after": {
+    "frequency_response": 0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "noise_speed",
+   "value": 2.0,
+   "after": {
+    "noise_speed": 2.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "noise_speed",
+   "value": 0.37,
+   "after": {
+    "noise_speed": 0.37
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "noise_speed",
+   "value": 0.0,
+   "after": {
+    "noise_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "rotation_speed",
+   "value": 2.0,
+   "after": {
+    "rotation_speed": 2.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "rotation_speed",
+   "value": 0.37,
+   "after": {
+    "rotation_speed": 0.37
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "rotation_speed",
+   "value": 0.0,
+   "after": {
+    "rotation_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "auto_rotate",
+   "value": false,
+   "after": {
+    "auto_rotate": false
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "show_sphere",
+   "value": false,
+   "after": {
+    "show_sphere": false
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "rainbow_mode",
+   "value": false,
+   "after": {
+    "rainbow_mode": false
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hair_alpha",
+   "value": 300.0,
+   "after": {
+    "hair_alpha": 255
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hair_alpha",
+   "value": 55.5,
+   "after": {
+    "hair_alpha": 55
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hair_alpha",
+   "value": 0.0,
+   "after": {
+    "hair_alpha": 10
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hue_shift_speed",
+   "value": 60.0,
+   "after": {
+    "hue_shift_speed": 60.0
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hue_shift_speed",
+   "value": 11.1,
+   "after": {
+    "hue_shift_speed": 11.1
+   }
+  },
+  {
+   "plugin": "Noise Sphere",
+   "param": "hue_shift_speed",
+   "value": 0.0,
+   "after": {
+    "hue_shift_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "num_particles",
+   "value": 10000.0,
+   "after": {
+    "num_particles": 10000
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "num_particles",
+   "value": 1850.0,
+   "after": {
+    "num_particles": 1850
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "num_particles",
+   "value": 0.0,
+   "after": {
+    "num_particles": 100
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "gravity_strength",
+   "value": 2.0,
+   "after": {
+    "gravity_strength": 2.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "gravity_strength",
+   "value": 0.37,
+   "after": {
+    "gravity_strength": 0.37
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "gravity_strength",
+   "value": 0.0,
+   "after": {
+    "gravity_strength": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "wind_force",
+   "value": 0.0,
+   "after": {
+    "wind_force": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "wind_force",
+   "value": 0.0,
+   "after": {
+    "wind_force": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "wind_force",
+   "value": 0.0,
+   "after": {
+    "wind_force": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "turbulence",
+   "value": 0.2,
+   "after": {
+    "turbulence": 0.2
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "turbulence",
+   "value": 0.037,
+   "after": {
+    "turbulence": 0.037
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "turbulence",
+   "value": 0.0,
+   "after": {
+    "turbulence": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "bass_lift",
+   "value": 2.0,
+   "after": {
+    "bass_lift": 2.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "bass_lift",
+   "value": 0.37,
+   "after": {
+    "bass_lift": 0.37
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "bass_lift",
+   "value": 0.0,
+   "after": {
+    "bass_lift": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "treble_spread",
+   "value": 2.0,
+   "after": {
+    "treble_spread": 2.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "treble_spread",
+   "value": 0.37,
+   "after": {
+    "treble_spread": 0.37
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "treble_spread",
+   "value": 0.0,
+   "after": {
+    "treble_spread": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "base_hue",
+   "value": 400.0,
+   "after": {
+    "base_hue": 40.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "base_hue",
+   "value": 74.0,
+   "after": {
+    "base_hue": 74.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "base_hue",
+   "value": 0.0,
+   "after": {
+    "base_hue": 0.0
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "glow_effect",
+   "value": false,
+   "after": {
+    "glow_effect": false
+   }
+  },
+  {
+   "plugin": "Particle Fountain",
+   "param": "fade_trails",
+   "value": false,
+   "after": {
+    "fade_trails": false
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "max_particles",
+   "value": 2000.0,
+   "after": {
+    "max_particles": 2000.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "max_particles",
+   "value": 370.0,
+   "after": {
+    "max_particles": 370.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "max_particles",
+   "value": 0.0,
+   "after": {
+    "max_particles": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "spawn_rate",
+   "value": 100.0,
+   "after": {
+    "spawn_rate": 100.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "spawn_rate",
+   "value": 18.5,
+   "after": {
+    "spawn_rate": 18.5
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "spawn_rate",
+   "value": 0.0,
+   "after": {
+    "spawn_rate": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "particle_life",
+   "value": 6.0,
+   "after": {
+    "particle_life": 6.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "particle_life",
+   "value": 1.1099999999999999,
+   "after": {
+    "particle_life": 1.1099999999999999
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "particle_life",
+   "value": 0.0,
+   "after": {
+    "particle_life": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "particle_speed",
+   "value": 100.0,
+   "after": {
+    "particle_speed": 100.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "particle_speed",
+   "value": 18.5,
+   "after": {
+    "particle_speed": 18.5
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "particle_speed",
+   "value": 0.0,
+   "after": {
+    "particle_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "gravity",
+   "value": 40.0,
+   "after": {
+    "gravity": 40.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "gravity",
+   "value": 7.4,
+   "after": {
+    "gravity": 7.4
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "gravity",
+   "value": 0.0,
+   "after": {
+    "gravity": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "wind",
+   "value": 0.0,
+   "after": {
+    "wind": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "wind",
+   "value": 0.0,
+   "after": {
+    "wind": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "wind",
+   "value": 0.0,
+   "after": {
+    "wind": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "turbulence",
+   "value": 20.0,
+   "after": {
+    "turbulence": 20.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "turbulence",
+   "value": 3.7,
+   "after": {
+    "turbulence": 3.7
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "turbulence",
+   "value": 0.0,
+   "after": {
+    "turbulence": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "attraction",
+   "value": 0.0,
+   "after": {
+    "attraction": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "attraction",
+   "value": 0.0,
+   "after": {
+    "attraction": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "attraction",
+   "value": 0.0,
+   "after": {
+    "attraction": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "shape_size",
+   "value": 200.0,
+   "after": {
+    "shape_size": 200.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "shape_size",
+   "value": 37.0,
+   "after": {
+    "shape_size": 37.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "shape_size",
+   "value": 0.0,
+   "after": {
+    "shape_size": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_cycle_speed",
+   "value": 60.0,
+   "after": {
+    "color_cycle_speed": 60.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_cycle_speed",
+   "value": 11.1,
+   "after": {
+    "color_cycle_speed": 11.1
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_cycle_speed",
+   "value": 0.0,
+   "after": {
+    "color_cycle_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_saturation",
+   "value": 1.4,
+   "after": {
+    "color_saturation": 1
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_saturation",
+   "value": 0.259,
+   "after": {
+    "color_saturation": 0.259
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_saturation",
+   "value": 0.0,
+   "after": {
+    "color_saturation": 0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_brightness",
+   "value": 1.8,
+   "after": {
+    "color_brightness": 1
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_brightness",
+   "value": 0.333,
+   "after": {
+    "color_brightness": 0.333
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "color_brightness",
+   "value": 0.0,
+   "after": {
+    "color_brightness": 0
+   }
+  },
+  {
+   "plugin": "Particles",
+   "param": "show_shape_outline",
+   "value": false,
+   "after": {
+    "show_shape_outline": false
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "max_particles",
+   "value": 30.0,
+   "after": {
+    "max_particles": 30
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "max_particles",
+   "value": 5.55,
+   "after": {
+    "max_particles": 5
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "max_particles",
+   "value": 0.0,
+   "after": {
+    "max_particles": 3
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "particle_creation_rate",
+   "value": 0.6,
+   "after": {
+    "particle_creation_rate": 0.6
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "particle_creation_rate",
+   "value": 0.111,
+   "after": {
+    "particle_creation_rate": 0.111
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "particle_creation_rate",
+   "value": 0.0,
+   "after": {
+    "particle_creation_rate": 0.0
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "improvisation_intensity",
+   "value": 1.4,
+   "after": {
+    "improvisation_intensity": 1.4
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "improvisation_intensity",
+   "value": 0.259,
+   "after": {
+    "improvisation_intensity": 0.259
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "improvisation_intensity",
+   "value": 0.0,
+   "after": {
+    "improvisation_intensity": 0.1
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "rhythm_complexity",
+   "value": 2.0,
+   "after": {
+    "rhythm_complexity": 2.0
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "rhythm_complexity",
+   "value": 0.37,
+   "after": {
+    "rhythm_complexity": 0.37
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "rhythm_complexity",
+   "value": 0.0,
+   "after": {
+    "rhythm_complexity": 0.1
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "audio_sensitivity",
+   "value": 2.4,
+   "after": {
+    "audio_sensitivity": 2.4
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "audio_sensitivity",
+   "value": 0.444,
+   "after": {
+    "audio_sensitivity": 0.444
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "beat_observation_strength",
+   "value": 4.0,
+   "after": {
+    "beat_observation_strength": 4.0
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "beat_observation_strength",
+   "value": 0.74,
+   "after": {
+    "beat_observation_strength": 0.74
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "beat_observation_strength",
+   "value": 0.0,
+   "after": {
+    "beat_observation_strength": 0.0
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "quantum_coherence_time",
+   "value": 10.0,
+   "after": {
+    "quantum_coherence_time": 10.0
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "quantum_coherence_time",
+   "value": 1.85,
+   "after": {
+    "quantum_coherence_time": 1.85
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "quantum_coherence_time",
+   "value": 0.0,
+   "after": {
+    "quantum_coherence_time": 0.0
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "show_uncertainty",
+   "value": false,
+   "after": {
+    "show_uncertainty": false
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "show_probability_waves",
+   "value": false,
+   "after": {
+    "show_probability_waves": false
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "show_entanglement",
+   "value": false,
+   "after": {
+    "show_entanglement": false
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "show_particle_trails",
+   "value": false,
+   "after": {
+    "show_particle_trails": false
+   }
+  },
+  {
+   "plugin": "Quantum Jazz",
+   "param": "enable_jazz_improvisation",
+   "value": false,
+   "after": {
+    "enable_jazz_improvisation": false
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "num_rings",
+   "value": 12.0,
+   "after": {
+    "num_rings": 8
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "num_rings",
+   "value": 2.2199999999999998,
+   "after": {
+    "num_rings": 3
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "num_rings",
+   "value": 0.0,
+   "after": {
+    "num_rings": 3
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "beat_response_strength",
+   "value": 3.0,
+   "after": {
+    "beat_response_strength": 3.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "beat_response_strength",
+   "value": 0.5549999999999999,
+   "after": {
+    "beat_response_strength": 0.5549999999999999
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "beat_response_strength",
+   "value": 0.0,
+   "after": {
+    "beat_response_strength": 0.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "network_activity_level",
+   "value": 1.0,
+   "after": {
+    "network_activity_level": 1.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "network_activity_level",
+   "value": 0.185,
+   "after": {
+    "network_activity_level": 0.185
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "network_activity_level",
+   "value": 0.0,
+   "after": {
+    "network_activity_level": 0.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "prediction_frequency",
+   "value": 0.6,
+   "after": {
+    "prediction_frequency": 0.6
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "prediction_frequency",
+   "value": 0.111,
+   "after": {
+    "prediction_frequency": 0.111
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "prediction_frequency",
+   "value": 0.0,
+   "after": {
+    "prediction_frequency": 0.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "data_flow_speed",
+   "value": 2.0,
+   "after": {
+    "data_flow_speed": 2.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "data_flow_speed",
+   "value": 0.37,
+   "after": {
+    "data_flow_speed": 0.37
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "data_flow_speed",
+   "value": 0.0,
+   "after": {
+    "data_flow_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "frequency_color_shift",
+   "value": 0.6,
+   "after": {
+    "frequency_color_shift": 0.6
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "frequency_color_shift",
+   "value": 0.111,
+   "after": {
+    "frequency_color_shift": 0.111
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "frequency_color_shift",
+   "value": 0.0,
+   "after": {
+    "frequency_color_shift": 0.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "geometric_precision",
+   "value": 2.0,
+   "after": {
+    "geometric_precision": 2.0
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "geometric_precision",
+   "value": 0.37,
+   "after": {
+    "geometric_precision": 0.37
+   }
+  },
+  {
+   "plugin": "Rehoboam",
+   "param": "geometric_precision",
+   "value": 0.0,
+   "after": {
+    "geometric_precision": 0.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "cube_count",
+   "value": 300.0,
+   "after": {
+    "cube_count": 300
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "cube_count",
+   "value": 55.5,
+   "after": {
+    "cube_count": 55
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "cube_count",
+   "value": 0.0,
+   "after": {
+    "cube_count": 10
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "audio_sensitivity",
+   "value": 2.0,
+   "after": {
+    "audio_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "audio_sensitivity",
+   "value": 0.37,
+   "after": {
+    "audio_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "audio_sensitivity",
+   "value": 0.0,
+   "after": {
+    "audio_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "rotation_speed",
+   "value": 2.0,
+   "after": {
+    "rotation_speed": 2.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "rotation_speed",
+   "value": 0.37,
+   "after": {
+    "rotation_speed": 0.37
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "rotation_speed",
+   "value": 0.0,
+   "after": {
+    "rotation_speed": 0.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "zoom_sensitivity",
+   "value": 2.0,
+   "after": {
+    "zoom_sensitivity": 2.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "zoom_sensitivity",
+   "value": 0.37,
+   "after": {
+    "zoom_sensitivity": 0.37
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "zoom_sensitivity",
+   "value": 0.0,
+   "after": {
+    "zoom_sensitivity": 0.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "ambient_light",
+   "value": 1.4,
+   "after": {
+    "ambient_light": 1.4
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "ambient_light",
+   "value": 0.259,
+   "after": {
+    "ambient_light": 0.259
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "ambient_light",
+   "value": 0.0,
+   "after": {
+    "ambient_light": 0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "enable_depth_sorting",
+   "value": false,
+   "after": {
+    "enable_depth_sorting": false
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "enable_lighting",
+   "value": false,
+   "after": {
+    "enable_lighting": false
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "enable_trails",
+   "value": true,
+   "after": {
+    "enable_trails": true
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "position_range",
+   "value": 280.0,
+   "after": {
+    "position_range": 280.0
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "position_range",
+   "value": 51.8,
+   "after": {
+    "position_range": 51.8
+   }
+  },
+  {
+   "plugin": "Space Junk",
+   "param": "position_range",
+   "value": 0.0,
+   "after": {
+    "position_range": 50
+   }
+  }
+ ]
+}
