@@ -579,10 +579,10 @@ class Predator:
     def seek(self, target: Vector2D) -> Vector2D:
         """Seek toward target with predator-specific behavior"""
         desired = Vector2D.sub_static(target, self.location)
-        desired.normalize()
         
-        # Speed up when close to prey
+        # Speed up when close to prey (distance measured before normalising)
         distance = desired.mag()
+        desired.normalize()
         if distance < 30:
             speed = self.maxspeed * 2  # Sprint when close!
         else:

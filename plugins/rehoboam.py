@@ -300,6 +300,7 @@ class RehoboamPlugin(ArtPlugin):
     
     def build_network(self):
         """Build the Rehoboam network structure"""
+        self.rings = []
         self.all_nodes.clear()
         self.data_streams.clear()
         self.prediction_pathways.clear()
