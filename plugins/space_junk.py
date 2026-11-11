@@ -376,8 +376,9 @@ class SpaceJunkPlugin(ArtPlugin):
         audio_rotation_boost = amplitude * self.audio_sensitivity * 50 * dt
         
         # Different axes respond to different frequency bands
-        self.global_rotation.y += base_rotation_speed + freq_bands.get('bass', 0) * 30 * dt
-        self.global_rotation.x += base_rotation_speed * 0.7 + freq_bands.get('treble', 0) * 20 * dt
+        # (rates are in degrees; Vector3D.rotate_* takes radians)
+        self.global_rotation.y += math.radians(base_rotation_speed + freq_bands.get('bass', 0) * 30 * dt)
+        self.global_rotation.x += math.radians(base_rotation_speed * 0.7 + freq_bands.get('treble', 0) * 20 * dt)
         
         # Beat response for zoom
         if beat_detected:
