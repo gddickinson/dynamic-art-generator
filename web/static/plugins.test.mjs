@@ -77,3 +77,12 @@ for (const [name] of REGISTRY) {
 }
 assert.ok(n > 0, 'no plugin tested');
 console.log(`plugins.test: ${n} plugin ports ok`);
+
+// Musical Ecosystem prey hue = age hue + audio shift (tests/test_ecosystem_prey_hue.py checks the same numbers).
+if (!only || only === 'Musical Ecosystem') {
+  const { PreyBoid } = await import('./plugins/ecosystem_life.js');
+  const b = new PreyBoid(100, 100); b.age = 5; b.max_age = 20;
+  b.update_audio_response({ amplitude: 1.0, dominant_frequency: 1000 });
+  assert.ok(Math.abs(b.color_hue - 87) < 1e-9, `prey hue ${b.color_hue}`);
+  console.log('ok Musical Ecosystem prey hue follows the audio');
+}

@@ -422,12 +422,10 @@ class Boid:
         amplitude = audio_features.get('amplitude', 0)
         frequency = audio_features.get('dominant_frequency', 0)
         
-        # Color shifts with frequency and age
+        # Color shifts with age (older boids drift from yellow-green towards green) plus frequency and
+        # amplitude, computed afresh each frame like the predators' hue
         age_factor = self.age / self.max_age
-        self.color_hue += frequency * 0.002 + amplitude * 10
-        
-        # Older boids get more blue/purple
-        self.color_hue = (60 + age_factor * 60) % 360
+        self.color_hue = (60 + age_factor * 60 + frequency * 0.002 + amplitude * 10) % 360
     
     def update_trail(self):
         """Update visual trail"""

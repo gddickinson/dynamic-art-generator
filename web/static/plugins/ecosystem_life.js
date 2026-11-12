@@ -165,9 +165,8 @@ export class PreyBoid {
   update_audio_response(f) {
     const amp = get(f, 'amplitude', 0), freq = get(f, 'dominant_frequency', 0);
     const ageFactor = this.age / this.max_age;
-    this.color_hue += freq * 0.002 + amp * 10;
-    // As in Python, the next line overwrites the audio shift: the hue follows age only.
-    this.color_hue = pymod(60 + ageFactor * 60, 360);
+    // Age hue plus the audio shift, computed afresh each frame (as the predators' hue).
+    this.color_hue = pymod(60 + ageFactor * 60 + freq * 0.002 + amp * 10, 360);
   }
 
   update_trail() {
