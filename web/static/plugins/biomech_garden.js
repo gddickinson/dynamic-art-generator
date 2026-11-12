@@ -22,12 +22,12 @@ export class BioMechGardenPlugin extends ArtPlugin {
     this.audio_sensitivity = 1.0; this.growth_threshold = 0.3; this.bloom_sensitivity = 1.2; this.data_flow_rate = 1.0;
     this.ecosystem_energy = 0.5; this.nutrient_level = 1.0; this.data_network_activity = 0;
     this.enable_bio_glow = true; this.enable_data_flow = true;
-    this.enable_particle_effects = true; this.enable_servo_animation = true;
+    this.enable_servo_animation = true;
     this.parameters = {
       max_vines: this.max_vines, max_flowers: this.max_flowers, audio_sensitivity: this.audio_sensitivity,
       growth_threshold: this.growth_threshold, bloom_sensitivity: this.bloom_sensitivity,
       data_flow_rate: this.data_flow_rate, enable_bio_glow: this.enable_bio_glow,
-      enable_data_flow: this.enable_data_flow, enable_particle_effects: this.enable_particle_effects,
+      enable_data_flow: this.enable_data_flow,
       enable_servo_animation: this.enable_servo_animation,
     };
     this.plant_initial_seeds();

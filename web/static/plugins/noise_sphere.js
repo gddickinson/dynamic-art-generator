@@ -40,7 +40,7 @@ class Hair {
     const frequency = get(f, 'dominant_frequency', 0), fb = bands(f);
     this.energy += amplitude * 5 * dt;
     this.energy *= 0.95;
-    if (beat) this.beat_response = Math.min(this.beat_response + amplitude * 3, 2.0);
+    if (beat) this.beat_response = Math.min(this.beat_response + amplitude * 1.5 * (f.beat_sensitivity ?? 2.0), 2.0);
     else this.beat_response *= 0.9;
     const nt = tf * 0.0005, ng = this.noise_gen;
     let offPhi = (ng.noise(nt, Math.sin(this.phi) + this.noise_offset_phi) - 0.5) * 0.3;
@@ -103,6 +103,7 @@ export class NoiseSpherePlugin extends ArtPlugin {
       amplitude: amplitude * this.audio_sensitivity, beat_detected: beat,
       dominant_frequency: frequency * this.frequency_response,
       frequency_bands: { bass: fb.bass ?? 0, mid: fb.mid ?? 0, treble: fb.treble ?? 0 },
+      beat_sensitivity: this.beat_sensitivity,
     };
     if (this.auto_rotate) {
       const rs = this.rotation_speed * (1 + amplitude * 0.5);

@@ -55,6 +55,7 @@ export class QuantumJazzPlugin extends ArtPlugin {
     if (beat && this.show_probability_waves) this.create_probability_wave(amplitude, frequency);
     for (const p of [...this.particles]) {
       if (this.enable_jazz_improvisation) p.improvisation_factor = this.improvisation_intensity;
+      p.coherence_time = this.quantum_coherence_time; p.observation_strength = this.beat_observation_strength;
       p.update(dt, f, this.particles);
       if (p.x < -50 || p.x > this.surface_size[0] + 50 || p.y < -50 || p.y > this.surface_size[1] + 50) {
         this.particles.splice(this.particles.indexOf(p), 1);

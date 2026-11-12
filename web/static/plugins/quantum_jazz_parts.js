@@ -17,6 +17,7 @@ export class QuantumParticle {
     this.energy_level = energy_level;
     this.wave_function = generateWaveFunction(10);
     this.coherence = 1.0; this.observed = false; this.collapse_timer = 0;
+    this.coherence_time = 5.0; this.observation_strength = 2.0;   // the plugin's coherence time / observation strength
     this.improvisation_factor = uniform(0.3, 1.0); this.rhythm_sync = uniform(0, 1);
     this.jazz_phrase_position = 0; this.spontaneity = uniform(0.5, 1.5);
     this.trail = []; this.uncertainty_cloud = [];
@@ -28,10 +29,10 @@ export class QuantumParticle {
   update(dt, f, others) {
     const amplitude = get(f, 'amplitude', 0), beat = get(f, 'beat_detected', false);
     const frequency = get(f, 'dominant_frequency', 0), fb = bands(f);
-    if (beat && !this.observed) this.observe_particle(amplitude);
+    if (beat && !this.observed) this.observe_particle(amplitude * this.observation_strength / 2.0);
     if (this.observed) {
       this.collapse_timer += dt;
-      this.coherence = Math.max(0, 1 - this.collapse_timer * 0.5);
+      this.coherence = Math.max(0, 1 - this.collapse_timer / Math.max(this.coherence_time, 1e-6));
       if (this.coherence <= 0) this.reset_quantum_state();
     }
     const jazz = this.improvisation_factor * amplitude;

@@ -87,6 +87,8 @@ class QuantumParticle:
         self.coherence = 1.0  # How quantum vs classical
         self.observed = False
         self.collapse_timer = 0
+        self.coherence_time = 5.0        # seconds to decohere after observation (quantum_coherence_time)
+        self.observation_strength = 2.0  # beat_observation_strength (2.0 = observation intensity equals amplitude)
 
         # Jazz improvisation properties
         self.improvisation_factor = random.uniform(0.3, 1.0)
@@ -113,12 +115,12 @@ class QuantumParticle:
 
         # Beat causes wave function collapse (observation)
         if beat and not self.observed:
-            self.observe_particle(amplitude)
+            self.observe_particle(amplitude * self.observation_strength / 2.0)
 
         # Quantum decoherence over time
         if self.observed:
             self.collapse_timer += dt
-            self.coherence = max(0, 1 - self.collapse_timer * 0.5)
+            self.coherence = max(0, 1 - self.collapse_timer / max(self.coherence_time, 1e-6))
 
             if self.coherence <= 0:
                 self.reset_quantum_state()
@@ -529,6 +531,8 @@ class QuantumJazzPlugin(ArtPlugin):
             if self.enable_jazz_improvisation:
                 particle.improvisation_factor = self.improvisation_intensity
 
+            particle.coherence_time = self.quantum_coherence_time
+            particle.observation_strength = self.beat_observation_strength
             particle.update(dt, audio_features, self.particles)
 
             # Remove particles that have drifted too far (annihilation)

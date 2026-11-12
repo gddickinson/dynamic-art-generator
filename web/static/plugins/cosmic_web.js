@@ -13,7 +13,7 @@ export class CosmicWebPlugin extends ArtPlugin {
     super(CosmicWebPlugin.PLUGIN_NAME, size);
     this.orbs = []; this.num_orbs = 8; this.orb_mass_range = [0.5, 2.0];
     this.background_stars = []; this.star_count = 100; this.connection_opacity = 0.7; this.trail_fade = 0.3;
-    this.base_hue = 240; this.hue_shift_speed = 20; this.color_variance = 60;
+    this.base_hue = 240; this.hue_shift_speed = 20;
     this.audio_sensitivity = 1.0; this.beat_amplification = 3.0; this.frequency_color_influence = 1.0;
     this.enable_trails = true; this.enable_particles = true; this.enable_connections = true;
     this.enable_ripples = true; this.enable_stars = true;
@@ -23,7 +23,7 @@ export class CosmicWebPlugin extends ArtPlugin {
       beat_amplification: this.beat_amplification, gravity_strength: this.gravity_strength,
       expansion_force: this.expansion_force, swirl_force: this.swirl_force,
       connection_opacity: this.connection_opacity, hue_shift_speed: this.hue_shift_speed,
-      color_variance: this.color_variance, enable_trails: this.enable_trails,
+      enable_trails: this.enable_trails,
       enable_particles: this.enable_particles, enable_connections: this.enable_connections,
       enable_stars: this.enable_stars,
     };
@@ -65,6 +65,7 @@ export class CosmicWebPlugin extends ArtPlugin {
         frequency_bands: { bass: (fb.bass ?? 0) * this.expansion_force, mid: fb.mid ?? 0, treble: (fb.treble ?? 0) * this.swirl_force },
       };
       orb.gravity_scale = this.gravity_strength;
+      orb.beat_scale = this.beat_amplification / 3.0;
       orb.update(dt, this.orbs, scaled, this.surface_size, t);
     }
     if (this.enable_stars) for (const s of this.background_stars) s.twinkle_phase += s.twinkle_speed * dt;
@@ -159,8 +160,6 @@ export class CosmicWebPlugin extends ArtPlugin {
       if (n !== this.orbs.length) { this.num_orbs = n; this.create_orbs(); this.parameters[name] = n; }
     } else if (name === 'connection_opacity' || name === 'trail_fade') {
       this[name] = Math.max(0, Math.min(1, Number(value))); this.parameters[name] = this[name];
-    } else if (name === 'color_variance') {
-      this.color_variance = Math.max(0, Math.min(180, Number(value))); this.parameters[name] = this.color_variance;
     }
   }
 

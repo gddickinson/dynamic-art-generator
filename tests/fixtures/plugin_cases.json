@@ -36,7 +36,6 @@
     "data_flow_rate": 1.0,
     "enable_bio_glow": true,
     "enable_data_flow": true,
-    "enable_particle_effects": true,
     "enable_servo_animation": true
    }
   },
@@ -56,7 +55,6 @@
     "swirl_force": 0.3,
     "connection_opacity": 0.7,
     "hue_shift_speed": 20,
-    "color_variance": 60,
     "enable_trails": true,
     "enable_particles": true,
     "enable_connections": true,
@@ -191,8 +189,7 @@
     "bass_lift": 1.0,
     "treble_spread": 1.0,
     "base_hue": 200,
-    "glow_effect": true,
-    "fade_trails": true
+    "glow_effect": true
    }
   },
   {
@@ -682,14 +679,6 @@
   },
   {
    "plugin": "Bio-Mechanical Garden",
-   "param": "enable_particle_effects",
-   "value": false,
-   "after": {
-    "enable_particle_effects": false
-   }
-  },
-  {
-   "plugin": "Bio-Mechanical Garden",
    "param": "enable_servo_animation",
    "value": false,
    "after": {
@@ -886,30 +875,6 @@
    "value": 0.0,
    "after": {
     "hue_shift_speed": 0.0
-   }
-  },
-  {
-   "plugin": "Cosmic Web",
-   "param": "color_variance",
-   "value": 120.0,
-   "after": {
-    "color_variance": 120.0
-   }
-  },
-  {
-   "plugin": "Cosmic Web",
-   "param": "color_variance",
-   "value": 22.2,
-   "after": {
-    "color_variance": 22.2
-   }
-  },
-  {
-   "plugin": "Cosmic Web",
-   "param": "color_variance",
-   "value": 0.0,
-   "after": {
-    "color_variance": 0
    }
   },
   {
@@ -2342,14 +2307,6 @@
    "value": false,
    "after": {
     "glow_effect": false
-   }
-  },
-  {
-   "plugin": "Particle Fountain",
-   "param": "fade_trails",
-   "value": false,
-   "after": {
-    "fade_trails": false
    }
   },
   {

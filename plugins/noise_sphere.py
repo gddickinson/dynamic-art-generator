@@ -115,7 +115,7 @@ class Hair:
         self.energy *= 0.95  # Decay
         
         if beat_detected:
-            self.beat_response = min(self.beat_response + amplitude * 3, 2.0)
+            self.beat_response = min(self.beat_response + amplitude * 1.5 * audio_features.get('beat_sensitivity', 2.0), 2.0)
         else:
             self.beat_response *= 0.9
         
@@ -262,7 +262,8 @@ class NoiseSpherePlugin(ArtPlugin):
                 'bass': freq_bands.get('bass', 0),
                 'mid': freq_bands.get('mid', 0),
                 'treble': freq_bands.get('treble', 0)
-            }
+            },
+            'beat_sensitivity': self.beat_sensitivity
         }
         
         # Update rotation

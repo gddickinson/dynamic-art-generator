@@ -163,8 +163,8 @@ class FountainParticle:
         bass_force = freq_bands.get('bass', 0) * 0.3
         self.acceleration.y -= bass_force
         
-        # Treble adds horizontal turbulence
-        treble_force = freq_bands.get('treble', 0) * 0.2
+        # Treble adds horizontal turbulence (strength set by the plugin's turbulence parameter, default 0.1)
+        treble_force = freq_bands.get('treble', 0) * 2.0 * audio_features.get('turbulence', 0.1)
         self.acceleration.x += random.uniform(-treble_force, treble_force)
         
         # Mid frequencies affect color
@@ -251,7 +251,6 @@ class ParticleFountainPlugin(ArtPlugin):
         self.particle_size_range = (2, 8)
         self.color_mode = "rainbow"  # rainbow, mono, frequency
         self.base_hue = 200  # Blue
-        self.fade_trails = True
         self.glow_effect = True
         
         # Performance options
@@ -268,8 +267,7 @@ class ParticleFountainPlugin(ArtPlugin):
             'bass_lift': self.bass_lift,
             'treble_spread': self.treble_spread,
             'base_hue': self.base_hue,
-            'glow_effect': self.glow_effect,
-            'fade_trails': self.fade_trails
+            'glow_effect': self.glow_effect
         }
         
         # Initialize particles
@@ -348,7 +346,8 @@ class ParticleFountainPlugin(ArtPlugin):
                 'bass': audio_features.get('frequency_bands', {}).get('bass', 0) * self.bass_lift,
                 'mid': audio_features.get('frequency_bands', {}).get('mid', 0),
                 'treble': audio_features.get('frequency_bands', {}).get('treble', 0) * self.treble_spread
-            }
+            },
+            'turbulence': self.turbulence
         }
         
         # Update all particles

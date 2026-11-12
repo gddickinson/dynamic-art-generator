@@ -9,6 +9,7 @@ export class CosmicOrb {
     this.vx = uniform(-20, 20); this.vy = uniform(-20, 20);
     this.mass = mass;
     this.gravity_scale = 1.0;   // the plugin's gravity_strength
+    this.beat_scale = 1.0;      // the plugin's beat_amplification / its default 3.0
     this.base_radius = 10 + mass * 5; this.radius = this.base_radius;
     this.energy = 0.0;
     this.pulse_phase = uniform(0, 2 * Math.PI);
@@ -24,7 +25,7 @@ export class CosmicOrb {
     const frequency = get(f, 'dominant_frequency', 0), fb = bands(f);
     this.energy += amplitude * 10 * dt;
     this.energy *= 0.95;
-    if (beat) { this.energy += amplitude * 20; this.create_ripple(); }
+    if (beat) { this.energy += amplitude * 20 * this.beat_scale; this.create_ripple(); }
     let fx = 0, fy = 0;
     for (const o of others) {
       if (o === this) continue;

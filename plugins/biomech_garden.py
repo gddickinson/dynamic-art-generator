@@ -348,7 +348,6 @@ class BioMechGardenPlugin(ArtPlugin):
         # Effects
         self.enable_bio_glow = True
         self.enable_data_flow = True
-        self.enable_particle_effects = True
         self.enable_servo_animation = True
         
         # Store parameters for GUI
@@ -361,7 +360,6 @@ class BioMechGardenPlugin(ArtPlugin):
             'data_flow_rate': self.data_flow_rate,
             'enable_bio_glow': self.enable_bio_glow,
             'enable_data_flow': self.enable_data_flow,
-            'enable_particle_effects': self.enable_particle_effects,
             'enable_servo_animation': self.enable_servo_animation
         }
         

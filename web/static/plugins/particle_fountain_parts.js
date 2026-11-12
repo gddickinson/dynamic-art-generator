@@ -43,7 +43,7 @@ export class FountainParticle {
     const amplitude = f.amplitude ?? 0, frequency = f.dominant_frequency ?? 0, fb = f.frequency_bands;
     this.acceleration = this.gravity.copy();
     this.acceleration.y -= (fb.bass ?? 0) * 0.3;
-    const tf = (fb.treble ?? 0) * 0.2;
+    const tf = (fb.treble ?? 0) * 2.0 * (f.turbulence ?? 0.1);   // turbulence parameter, default 0.1
     this.acceleration.x += uniform(-tf, tf);
     this.hue += (fb.mid ?? 0) * 100;
     this.velocity.add(this.acceleration);

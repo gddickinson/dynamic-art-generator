@@ -59,6 +59,7 @@ class CosmicOrb:
         self.vy = random.uniform(-20, 20)
         self.mass = mass
         self.gravity_scale = 1.0  # the plugin's gravity_strength parameter
+        self.beat_scale = 1.0     # the plugin's beat_amplification / its default 3.0
         self.base_radius = 10 + mass * 5
         self.radius = self.base_radius
         self.energy = 0.0  # Audio energy accumulator
@@ -94,7 +95,7 @@ class CosmicOrb:
 
         # Beat response
         if beat:
-            self.energy += amplitude * 20
+            self.energy += amplitude * 20 * self.beat_scale
             self.create_ripple()
 
         # Gravitational forces from other orbs
@@ -281,7 +282,6 @@ class CosmicWebPlugin(ArtPlugin):
         # Color system
         self.base_hue = 240  # Start with blue
         self.hue_shift_speed = 20
-        self.color_variance = 60
 
         # Audio responsiveness
         self.audio_sensitivity = 1.0
@@ -310,7 +310,6 @@ class CosmicWebPlugin(ArtPlugin):
             'swirl_force': self.swirl_force,
             'connection_opacity': self.connection_opacity,
             'hue_shift_speed': self.hue_shift_speed,
-            'color_variance': self.color_variance,
             'enable_trails': self.enable_trails,
             'enable_particles': self.enable_particles,
             'enable_connections': self.enable_connections,
@@ -393,6 +392,7 @@ class CosmicWebPlugin(ArtPlugin):
             }
 
             orb.gravity_scale = self.gravity_strength
+            orb.beat_scale = self.beat_amplification / 3.0
             orb.update(dt, self.orbs, scaled_audio, self.surface_size)
 
         # Update background stars
@@ -657,10 +657,6 @@ class CosmicWebPlugin(ArtPlugin):
             elif name in ['connection_opacity', 'trail_fade']:
                 setattr(self, name, max(0, min(1, float(value))))
                 self.parameters[name] = getattr(self, name)
-
-            elif name == 'color_variance':
-                self.color_variance = max(0, min(180, float(value)))
-                self.parameters[name] = self.color_variance
 
     def reset(self):
         """Reset plugin to initial state"""

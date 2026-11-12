@@ -16,13 +16,13 @@ export class ParticleFountainPlugin extends ArtPlugin {
     this.gravity_strength = 1.0; this.wind_force = 0.0; this.turbulence = 0.1;
     this.audio_sensitivity = 1.0; this.bass_lift = 1.0; this.treble_spread = 1.0; this.frequency_color_influence = 1.0;
     this.particle_size_range = [2, 8]; this.color_mode = 'rainbow'; this.base_hue = 200;
-    this.fade_trails = true; this.glow_effect = true;
+    this.glow_effect = true;
     this.use_batch_rendering = true; this.render_quality = 'high';
     this.parameters = {
       num_particles: this.num_particles, audio_sensitivity: this.audio_sensitivity,
       gravity_strength: this.gravity_strength, wind_force: this.wind_force, turbulence: this.turbulence,
       bass_lift: this.bass_lift, treble_spread: this.treble_spread, base_hue: this.base_hue,
-      glow_effect: this.glow_effect, fade_trails: this.fade_trails,
+      glow_effect: this.glow_effect,
     };
     this.create_particles();
     this.frame_count = 0; this.last_fps_time = this.now(); this.current_fps = 60;
@@ -66,6 +66,7 @@ export class ParticleFountainPlugin extends ArtPlugin {
       beat_detected: get(f, 'beat_detected', false),
       dominant_frequency: get(f, 'dominant_frequency', 0),
       frequency_bands: { bass: (fb.bass ?? 0) * this.bass_lift, mid: fb.mid ?? 0, treble: (fb.treble ?? 0) * this.treble_spread },
+      turbulence: this.turbulence,
     };
     for (const p of this.particles) {
       if (p.is_dead()) p.rebirth(this.emitter_x, this.emitter_y);
