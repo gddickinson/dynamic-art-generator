@@ -14,7 +14,7 @@
    "spectral_rolloff": 15934.5703125,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 43.06640625,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.293424514655582,
@@ -34,7 +34,7 @@
    "spectral_rolloff": 10852.734375,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5486664487136503,
@@ -54,7 +54,7 @@
    "spectral_rolloff": 9474.609375,
    "zero_crossing_rate": 0.01171875,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.4716407550786391,
@@ -74,7 +74,7 @@
    "spectral_rolloff": 10120.60546875,
    "zero_crossing_rate": 0.0205078125,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.3739548838451127,
@@ -94,7 +94,7 @@
    "spectral_rolloff": 3316.11328125,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5344914946682308,
@@ -114,7 +114,7 @@
    "spectral_rolloff": 3660.64453125,
    "zero_crossing_rate": 0.0234375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.4732276870880378,
@@ -134,7 +134,7 @@
    "spectral_rolloff": 6158.49609375,
    "zero_crossing_rate": 0.021484375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.3428129897199062,
@@ -154,7 +154,7 @@
    "spectral_rolloff": 6459.9609375,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.21514317173016725,
@@ -174,7 +174,7 @@
    "spectral_rolloff": 4823.4375,
    "zero_crossing_rate": 0.0205078125,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.1295683320501164,
@@ -194,7 +194,7 @@
    "spectral_rolloff": 473.73046875,
    "zero_crossing_rate": 0.0205078125,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0018140425548097386,
@@ -214,7 +214,7 @@
    "spectral_rolloff": 14039.6484375,
    "zero_crossing_rate": 0.0439453125,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.007195887266084287,
@@ -234,7 +234,7 @@
    "spectral_rolloff": 17398.828125,
    "zero_crossing_rate": 0.0703125,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.006859167901444351,
@@ -254,7 +254,7 @@
    "spectral_rolloff": 15503.90625,
    "zero_crossing_rate": 0.0322265625,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.007248027129455597,
@@ -274,7 +274,7 @@
    "spectral_rolloff": 11025.0,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.003399742453821385,
@@ -294,7 +294,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.0205078125,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0020087782533375026,
@@ -314,7 +314,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.0205078125,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007845714605977961,
@@ -334,7 +334,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007019804905536601,
@@ -354,7 +354,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004188046637608493,
@@ -374,7 +374,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     9.286584001616279e-05,
@@ -394,7 +394,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0002278821011634032,
@@ -414,7 +414,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005043569235953808,
@@ -434,7 +434,7 @@
    "spectral_rolloff": 18001.7578125,
    "zero_crossing_rate": 0.18359375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.023165300216546295,
@@ -454,7 +454,7 @@
    "spectral_rolloff": 18992.28515625,
    "zero_crossing_rate": 0.2919921875,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.029855051270720842,
@@ -474,7 +474,7 @@
    "spectral_rolloff": 18647.75390625,
    "zero_crossing_rate": 0.212890625,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.026835067722761907,
@@ -494,7 +494,7 @@
    "spectral_rolloff": 18346.2890625,
    "zero_crossing_rate": 0.1416015625,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.023810884113134458,
@@ -514,7 +514,7 @@
    "spectral_rolloff": 17872.55859375,
    "zero_crossing_rate": 0.109375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.021090799139296408,
@@ -534,7 +534,7 @@
    "spectral_rolloff": 17829.4921875,
    "zero_crossing_rate": 0.0712890625,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.021859742622615603,
@@ -554,7 +554,7 @@
    "spectral_rolloff": 17226.5625,
    "zero_crossing_rate": 0.0615234375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.019611980417528024,
@@ -574,7 +574,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.021484375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0018974597111847185,
@@ -594,7 +594,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0019127736180396082,
@@ -614,7 +614,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 473.73046875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0018518233800933045,
@@ -634,7 +634,7 @@
    "spectral_rolloff": 516.796875,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.001850653271182567,
@@ -654,7 +654,7 @@
    "spectral_rolloff": 16968.1640625,
    "zero_crossing_rate": 0.060546875,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.012871075091227398,
@@ -674,7 +674,7 @@
    "spectral_rolloff": 16795.8984375,
    "zero_crossing_rate": 0.0419921875,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.007585356307760096,
@@ -694,7 +694,7 @@
    "spectral_rolloff": 13695.1171875,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.004531715080707409,
@@ -714,7 +714,7 @@
    "spectral_rolloff": 6589.16015625,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0026431682164034056,
@@ -734,7 +734,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0234375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.001350593783561652,
@@ -754,7 +754,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0009924026362201589,
@@ -774,7 +774,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.000793727471496957,
@@ -794,7 +794,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0234375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0008285092279335965,
@@ -814,7 +814,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0234375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005104299515936237,
@@ -834,7 +834,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0224609375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00025592975491177123,
@@ -854,7 +854,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0234375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00012205762714540833,
@@ -894,7 +894,7 @@
    "spectral_rolloff": 11369.53125,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5482805284683239,
@@ -914,7 +914,7 @@
    "spectral_rolloff": 9043.9453125,
    "zero_crossing_rate": 0.0146484375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.49135947910605876,
@@ -934,7 +934,7 @@
    "spectral_rolloff": 10852.734375,
    "zero_crossing_rate": 0.025390625,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.3460437975251586,
@@ -954,7 +954,7 @@
    "spectral_rolloff": 3875.9765625,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5344747242386895,
@@ -974,7 +974,7 @@
    "spectral_rolloff": 3832.91015625,
    "zero_crossing_rate": 0.021484375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.48277933985610816,
@@ -994,7 +994,7 @@
    "spectral_rolloff": 6459.9609375,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.35347694861706735,
@@ -1014,7 +1014,7 @@
    "spectral_rolloff": 6546.09375,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.22422822345739357,
@@ -1034,7 +1034,7 @@
    "spectral_rolloff": 5770.8984375,
    "zero_crossing_rate": 0.0234375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.13648687116223907,
@@ -1054,7 +1054,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.001107308590106055,
@@ -1074,7 +1074,7 @@
    "spectral_rolloff": 8828.61328125,
    "zero_crossing_rate": 0.0361328125,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.004332453870411109,
@@ -1094,7 +1094,7 @@
    "spectral_rolloff": 17528.02734375,
    "zero_crossing_rate": 0.0595703125,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.006874112853484602,
@@ -1114,7 +1114,7 @@
    "spectral_rolloff": 15805.37109375,
    "zero_crossing_rate": 0.0302734375,
    "frequency": 516.796875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.006690980742254744,
@@ -1134,7 +1134,7 @@
    "spectral_rolloff": 11283.3984375,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.004038415473351026,
@@ -1154,7 +1154,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0025319166686276623,
@@ -1174,7 +1174,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0008964166039093165,
@@ -1194,7 +1194,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007872927045115309,
@@ -1214,7 +1214,7 @@
    "spectral_rolloff": 559.86328125,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.001107904537779618,
@@ -1234,7 +1234,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.025390625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.001031600262247064,
@@ -1254,7 +1254,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.0244140625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0006424606256089931,
@@ -1274,7 +1274,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.025390625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0009168207194764697,
@@ -1294,7 +1294,7 @@
    "spectral_rolloff": 17571.09375,
    "zero_crossing_rate": 0.1591796875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02318158383921843,
@@ -1314,7 +1314,7 @@
    "spectral_rolloff": 19035.3515625,
    "zero_crossing_rate": 0.314453125,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.026573748291389976,
@@ -1334,7 +1334,7 @@
    "spectral_rolloff": 18647.75390625,
    "zero_crossing_rate": 0.228515625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.028220653581392682,
@@ -1354,7 +1354,7 @@
    "spectral_rolloff": 18303.22265625,
    "zero_crossing_rate": 0.138671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02462005624730749,
@@ -1374,7 +1374,7 @@
    "spectral_rolloff": 18087.890625,
    "zero_crossing_rate": 0.0888671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.021671897922636234,
@@ -1394,7 +1394,7 @@
    "spectral_rolloff": 17915.625,
    "zero_crossing_rate": 0.072265625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02294927566883917,
@@ -1414,7 +1414,7 @@
    "spectral_rolloff": 17355.76171875,
    "zero_crossing_rate": 0.052734375,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.01994781895505135,
@@ -1434,7 +1434,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.02734375,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00015792030928779802,
@@ -1454,7 +1454,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00013163136845655704,
@@ -1474,7 +1474,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.025390625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0002592660077696309,
@@ -1494,7 +1494,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.025390625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004409306020074839,
@@ -1514,7 +1514,7 @@
    "spectral_rolloff": 16882.03125,
    "zero_crossing_rate": 0.0625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.012722221592741523,
@@ -1534,7 +1534,7 @@
    "spectral_rolloff": 16795.8984375,
    "zero_crossing_rate": 0.0478515625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.007262550654101197,
@@ -1554,7 +1554,7 @@
    "spectral_rolloff": 14254.98046875,
    "zero_crossing_rate": 0.025390625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.004432686237178626,
@@ -1574,7 +1574,7 @@
    "spectral_rolloff": 7450.48828125,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.002454939043767967,
@@ -1594,7 +1594,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.025390625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0009123370255401529,
@@ -1614,7 +1614,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007078871098699802,
@@ -1634,7 +1634,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0006133768421848338,
@@ -1654,7 +1654,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0009306838246468445,
@@ -1674,7 +1674,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.025390625,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0010076216873065949,
@@ -1694,7 +1694,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0009360171939626097,
@@ -1714,7 +1714,7 @@
    "spectral_rolloff": 602.9296875,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 559.86328125,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0008624067920470663,
@@ -1754,7 +1754,7 @@
    "spectral_rolloff": 11455.6640625,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5396828988702547,
@@ -1774,7 +1774,7 @@
    "spectral_rolloff": 8699.4140625,
    "zero_crossing_rate": 0.015625,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5024307028435249,
@@ -1794,7 +1794,7 @@
    "spectral_rolloff": 11541.796875,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.30895934183632845,
@@ -1814,7 +1814,7 @@
    "spectral_rolloff": 4263.57421875,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5288744252556505,
@@ -1834,7 +1834,7 @@
    "spectral_rolloff": 3746.77734375,
    "zero_crossing_rate": 0.0234375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.48645088411745185,
@@ -1854,7 +1854,7 @@
    "spectral_rolloff": 6503.02734375,
    "zero_crossing_rate": 0.025390625,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.36050765240972116,
@@ -1874,7 +1874,7 @@
    "spectral_rolloff": 6632.2265625,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.23247743543287794,
@@ -1894,7 +1894,7 @@
    "spectral_rolloff": 6330.76171875,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.13951843378021217,
@@ -1914,7 +1914,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004990790184693791,
@@ -1934,7 +1934,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.03515625,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.001804797146745285,
@@ -1954,7 +1954,7 @@
    "spectral_rolloff": 17657.2265625,
    "zero_crossing_rate": 0.0498046875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0066416497633803515,
@@ -1974,7 +1974,7 @@
    "spectral_rolloff": 16192.96875,
    "zero_crossing_rate": 0.033203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005869684021574178,
@@ -1994,7 +1994,7 @@
    "spectral_rolloff": 11627.9296875,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.004895974881438337,
@@ -2014,7 +2014,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0025782985529370474,
@@ -2034,7 +2034,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0263671875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.000259547525048836,
@@ -2054,7 +2054,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00011272347788495097,
@@ -2074,7 +2074,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     7.568436767012478e-05,
@@ -2094,7 +2094,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     2.19901626056451e-05,
@@ -2114,7 +2114,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     3.403255235295117e-05,
@@ -2134,7 +2134,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     7.425715590136388e-05,
@@ -2154,7 +2154,7 @@
    "spectral_rolloff": 17183.49609375,
    "zero_crossing_rate": 0.13671875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.022720541752018195,
@@ -2174,7 +2174,7 @@
    "spectral_rolloff": 18992.28515625,
    "zero_crossing_rate": 0.318359375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02453672314541603,
@@ -2194,7 +2194,7 @@
    "spectral_rolloff": 18604.6875,
    "zero_crossing_rate": 0.23828125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.028696709868213478,
@@ -2214,7 +2214,7 @@
    "spectral_rolloff": 18217.08984375,
    "zero_crossing_rate": 0.134765625,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.025019438139408164,
@@ -2234,7 +2234,7 @@
    "spectral_rolloff": 18130.95703125,
    "zero_crossing_rate": 0.1103515625,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.021046314452602383,
@@ -2254,7 +2254,7 @@
    "spectral_rolloff": 17915.625,
    "zero_crossing_rate": 0.076171875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.023722426866803283,
@@ -2274,7 +2274,7 @@
    "spectral_rolloff": 17355.76171875,
    "zero_crossing_rate": 0.05078125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.019996714341840208,
@@ -2294,7 +2294,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0302734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.001003959574854747,
@@ -2314,7 +2314,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.000544281302622304,
@@ -2334,7 +2334,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004443715975192648,
@@ -2354,7 +2354,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.000537266150353523,
@@ -2374,7 +2374,7 @@
    "spectral_rolloff": 16838.96484375,
    "zero_crossing_rate": 0.0546875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.012092751848810196,
@@ -2394,7 +2394,7 @@
    "spectral_rolloff": 16752.83203125,
    "zero_crossing_rate": 0.0498046875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.006677930064697974,
@@ -2414,7 +2414,7 @@
    "spectral_rolloff": 14427.24609375,
    "zero_crossing_rate": 0.0302734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.004400274087859346,
@@ -2434,7 +2434,7 @@
    "spectral_rolloff": 8096.484375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00259965310327831,
@@ -2454,7 +2454,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0008287435995649805,
@@ -2474,7 +2474,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.000405289809695076,
@@ -2494,7 +2494,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005697666582764316,
@@ -2514,7 +2514,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007055472233263932,
@@ -2534,7 +2534,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007703731747823975,
@@ -2554,7 +2554,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007899066585825383,
@@ -2574,7 +2574,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007918856976583216,
@@ -2614,7 +2614,7 @@
    "spectral_rolloff": 11757.12890625,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5374815126526444,
@@ -2634,7 +2634,7 @@
    "spectral_rolloff": 8527.1484375,
    "zero_crossing_rate": 0.005859375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.516686628813069,
@@ -2654,7 +2654,7 @@
    "spectral_rolloff": 12144.7265625,
    "zero_crossing_rate": 0.03125,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.26956647166934083,
@@ -2674,7 +2674,7 @@
    "spectral_rolloff": 4694.23828125,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5252845574724383,
@@ -2694,7 +2694,7 @@
    "spectral_rolloff": 3703.7109375,
    "zero_crossing_rate": 0.0205078125,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.4914149007061824,
@@ -2714,7 +2714,7 @@
    "spectral_rolloff": 6416.89453125,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.3685731281537516,
@@ -2734,7 +2734,7 @@
    "spectral_rolloff": 6632.2265625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.24020343988779466,
@@ -2754,7 +2754,7 @@
    "spectral_rolloff": 6503.02734375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.13995523074756583,
@@ -2774,7 +2774,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0003798327191557903,
@@ -2794,7 +2794,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0302734375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005984070560127831,
@@ -2814,7 +2814,7 @@
    "spectral_rolloff": 17958.69140625,
    "zero_crossing_rate": 0.06640625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.006522282522532963,
@@ -2834,7 +2834,7 @@
    "spectral_rolloff": 16322.16796875,
    "zero_crossing_rate": 0.0419921875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0049454940024315115,
@@ -2854,7 +2854,7 @@
    "spectral_rolloff": 11670.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005380763407849181,
@@ -2874,7 +2874,7 @@
    "spectral_rolloff": 904.39453125,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.002560565191936745,
@@ -2894,7 +2894,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004774098254850137,
@@ -2914,7 +2914,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005968189055931936,
@@ -2934,7 +2934,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0002929588355045995,
@@ -2954,7 +2954,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005629860119847708,
@@ -2974,7 +2974,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00028996730940247914,
@@ -2994,7 +2994,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.000533564562055993,
@@ -3014,7 +3014,7 @@
    "spectral_rolloff": 16580.56640625,
    "zero_crossing_rate": 0.1181640625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02136115317282384,
@@ -3034,7 +3034,7 @@
    "spectral_rolloff": 18949.21875,
    "zero_crossing_rate": 0.330078125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02454444024866114,
@@ -3054,7 +3054,7 @@
    "spectral_rolloff": 18475.48828125,
    "zero_crossing_rate": 0.2392578125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02828483471551027,
@@ -3074,7 +3074,7 @@
    "spectral_rolloff": 18217.08984375,
    "zero_crossing_rate": 0.1435546875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02470820347355351,
@@ -3094,7 +3094,7 @@
    "spectral_rolloff": 18217.08984375,
    "zero_crossing_rate": 0.109375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02060503520633963,
@@ -3114,7 +3114,7 @@
    "spectral_rolloff": 17958.69140625,
    "zero_crossing_rate": 0.0791015625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.023917128951739294,
@@ -3134,7 +3134,7 @@
    "spectral_rolloff": 17441.89453125,
    "zero_crossing_rate": 0.052734375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.020453100241430877,
@@ -3154,7 +3154,7 @@
    "spectral_rolloff": 3316.11328125,
    "zero_crossing_rate": 0.0361328125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0024801888036798973,
@@ -3174,7 +3174,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0003196694344158805,
@@ -3194,7 +3194,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.00040125299818779745,
@@ -3214,7 +3214,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.00022941151256530766,
@@ -3234,7 +3234,7 @@
    "spectral_rolloff": 16838.96484375,
    "zero_crossing_rate": 0.05859375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.011378815023748653,
@@ -3254,7 +3254,7 @@
    "spectral_rolloff": 16795.8984375,
    "zero_crossing_rate": 0.046875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005912783534355204,
@@ -3274,7 +3274,7 @@
    "spectral_rolloff": 14599.51171875,
    "zero_crossing_rate": 0.0322265625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005092296281685397,
@@ -3294,7 +3294,7 @@
    "spectral_rolloff": 9216.2109375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0026061747002040533,
@@ -3314,7 +3314,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.000858502327641331,
@@ -3334,7 +3334,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.0002811084677193426,
@@ -3354,7 +3354,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.00018318431324395728,
@@ -3374,7 +3374,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.0003177290088637784,
@@ -3394,7 +3394,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.00032974508008356976,
@@ -3414,7 +3414,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.00020033011533493906,
@@ -3434,7 +3434,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.0002393335341033367,
@@ -3474,7 +3474,7 @@
    "spectral_rolloff": 11972.4609375,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5359072335355652,
@@ -3494,7 +3494,7 @@
    "spectral_rolloff": 8484.08203125,
    "zero_crossing_rate": 0.0078125,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5336721845980099,
@@ -3514,7 +3514,7 @@
    "spectral_rolloff": 12833.7890625,
    "zero_crossing_rate": 0.0380859375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.2308002650064314,
@@ -3534,7 +3534,7 @@
    "spectral_rolloff": 5167.96875,
    "zero_crossing_rate": 0.005859375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.524183956164339,
@@ -3554,7 +3554,7 @@
    "spectral_rolloff": 3789.84375,
    "zero_crossing_rate": 0.015625,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5018582882878752,
@@ -3574,7 +3574,7 @@
    "spectral_rolloff": 6459.9609375,
    "zero_crossing_rate": 0.029296875,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.38066682620817666,
@@ -3594,7 +3594,7 @@
    "spectral_rolloff": 6761.42578125,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.25181641063631705,
@@ -3614,7 +3614,7 @@
    "spectral_rolloff": 6675.29296875,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.14502299165063706,
@@ -3634,7 +3634,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0002027522858985859,
@@ -3654,7 +3654,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": false,
    "bands": [
     0.0003664098078627723,
@@ -3674,7 +3674,7 @@
    "spectral_rolloff": 17958.69140625,
    "zero_crossing_rate": 0.078125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.007620673953770989,
@@ -3694,7 +3694,7 @@
    "spectral_rolloff": 16580.56640625,
    "zero_crossing_rate": 0.0341796875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.004937414737594627,
@@ -3714,7 +3714,7 @@
    "spectral_rolloff": 12058.59375,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005796761347150835,
@@ -3734,7 +3734,7 @@
    "spectral_rolloff": 2067.1875,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.002486347021772944,
@@ -3754,7 +3754,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004947693519077111,
@@ -3774,7 +3774,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00044388790468274074,
@@ -3794,7 +3794,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0003012359118780817,
@@ -3814,7 +3814,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00037972340363066404,
@@ -3834,7 +3834,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004422345928610664,
@@ -3854,7 +3854,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0002871248005361685,
@@ -3874,7 +3874,7 @@
    "spectral_rolloff": 16106.8359375,
    "zero_crossing_rate": 0.10546875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.01832160188727302,
@@ -3894,7 +3894,7 @@
    "spectral_rolloff": 18733.88671875,
    "zero_crossing_rate": 0.3271484375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.025861430068313016,
@@ -3914,7 +3914,7 @@
    "spectral_rolloff": 18432.421875,
    "zero_crossing_rate": 0.255859375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.027033103458011822,
@@ -3934,7 +3934,7 @@
    "spectral_rolloff": 18044.82421875,
    "zero_crossing_rate": 0.1650390625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02358473097497835,
@@ -3954,7 +3954,7 @@
    "spectral_rolloff": 18260.15625,
    "zero_crossing_rate": 0.1171875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02077630651408915,
@@ -3974,7 +3974,7 @@
    "spectral_rolloff": 17958.69140625,
    "zero_crossing_rate": 0.0810546875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.022930004953337937,
@@ -3994,7 +3994,7 @@
    "spectral_rolloff": 17484.9609375,
    "zero_crossing_rate": 0.0625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.020603247312442754,
@@ -4014,7 +4014,7 @@
    "spectral_rolloff": 11111.1328125,
    "zero_crossing_rate": 0.0322265625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0048164913245327,
@@ -4034,7 +4034,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005245442276179062,
@@ -4054,7 +4054,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0006089183281221774,
@@ -4074,7 +4074,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0003322891243148167,
@@ -4094,7 +4094,7 @@
    "spectral_rolloff": 16752.83203125,
    "zero_crossing_rate": 0.0537109375,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.010406119529203589,
@@ -4114,7 +4114,7 @@
    "spectral_rolloff": 16968.1640625,
    "zero_crossing_rate": 0.0546875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005636852524368336,
@@ -4134,7 +4134,7 @@
    "spectral_rolloff": 14556.4453125,
    "zero_crossing_rate": 0.0322265625,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005961537717325867,
@@ -4154,7 +4154,7 @@
    "spectral_rolloff": 9560.7421875,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0028065045428994667,
@@ -4174,7 +4174,7 @@
    "spectral_rolloff": 689.0625,
    "zero_crossing_rate": 0.029296875,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0009979183289111086,
@@ -4194,7 +4194,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007068334893094853,
@@ -4214,7 +4214,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005525616056208122,
@@ -4234,7 +4234,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0004088520094110367,
@@ -4254,7 +4254,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00043886297726289885,
@@ -4274,7 +4274,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0005370345949206325,
@@ -4294,7 +4294,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 645.99609375,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0006060867955940086,
@@ -4334,7 +4334,7 @@
    "spectral_rolloff": 12015.52734375,
    "zero_crossing_rate": 0.0,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5322196375136684,
@@ -4354,7 +4354,7 @@
    "spectral_rolloff": 8182.6171875,
    "zero_crossing_rate": 0.005859375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5429957573698965,
@@ -4374,7 +4374,7 @@
    "spectral_rolloff": 13307.51953125,
    "zero_crossing_rate": 0.0341796875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.1840088593480868,
@@ -4394,7 +4394,7 @@
    "spectral_rolloff": 5598.6328125,
    "zero_crossing_rate": 0.005859375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.5147305234512728,
@@ -4414,7 +4414,7 @@
    "spectral_rolloff": 3574.51171875,
    "zero_crossing_rate": 0.015625,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.504038677514309,
@@ -4434,7 +4434,7 @@
    "spectral_rolloff": 6072.36328125,
    "zero_crossing_rate": 0.02734375,
    "frequency": 0.0,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.38595839857055636,
@@ -4454,7 +4454,7 @@
    "spectral_rolloff": 6459.9609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.25738835229941565,
@@ -4474,7 +4474,7 @@
    "spectral_rolloff": 6287.6953125,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.14974769531151305,
@@ -4494,7 +4494,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00041414790795600624,
@@ -4514,7 +4514,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0006749312570819148,
@@ -4534,7 +4534,7 @@
    "spectral_rolloff": 17786.42578125,
    "zero_crossing_rate": 0.0693359375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.009837914151884727,
@@ -4554,7 +4554,7 @@
    "spectral_rolloff": 16795.8984375,
    "zero_crossing_rate": 0.0439453125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005692336418853249,
@@ -4574,7 +4574,7 @@
    "spectral_rolloff": 12446.19140625,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.005748489431300151,
@@ -4594,7 +4594,7 @@
    "spectral_rolloff": 3316.11328125,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.002346155304145885,
@@ -4614,7 +4614,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0007016212498487384,
@@ -4634,7 +4634,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00040053596321716807,
@@ -4654,7 +4654,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.0002824654879034357,
@@ -4674,7 +4674,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00038508868124096794,
@@ -4694,7 +4694,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.02734375,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00027652169390286003,
@@ -4714,7 +4714,7 @@
    "spectral_rolloff": 645.99609375,
    "zero_crossing_rate": 0.0283203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.00014964630715476066,
@@ -4734,7 +4734,7 @@
    "spectral_rolloff": 14341.11328125,
    "zero_crossing_rate": 0.0703125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.011919745012728708,
@@ -4754,7 +4754,7 @@
    "spectral_rolloff": 18647.75390625,
    "zero_crossing_rate": 0.3154296875,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.027223370816152212,
@@ -4774,7 +4774,7 @@
    "spectral_rolloff": 18303.22265625,
    "zero_crossing_rate": 0.244140625,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02493254782760933,
@@ -4794,7 +4794,7 @@
    "spectral_rolloff": 17958.69140625,
    "zero_crossing_rate": 0.158203125,
    "frequency": 602.9296875,
-   "beat_detected": true,
+   "beat_detected": false,
    "onset_detected": true,
    "bands": [
     0.02291185429281722,

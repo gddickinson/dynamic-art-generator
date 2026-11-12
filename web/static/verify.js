@@ -41,13 +41,12 @@ route('verify', async () => {
   <div class="tiles">
     <div class="tile"><b class="${r.bad.length ? 'err' : 'ok'}">${r.bad.length ? r.bad.length + ' differ' : 'match'}</b><span>${r.n} values compared</span></div>
     <div class="tile"><b>${r.worst.toExponential(1)}</b><span>largest relative difference</span></div>
-    <div class="tile"><b>${s.analyzer_beats}</b><span>adaptive beats (AudioAnalyzer)</span></div>
-    <div class="tile"><b>${s.desktop_beats}</b><span>desktop beats (RMS &gt; 0.1)</span></div>
+    <div class="tile"><b>${s.desktop_beats}</b><span>beats detected</span></div>
     <div class="tile"><b>${ms.toFixed(0)} ms</b><span>JS analysis time</span></div>
   </div>
   ${r.bad.length ? `<pre class="err">${esc(r.bad.slice(0, 10).join('\n'))}</pre>` : ''}
-  <p class="small mute">The desktop app counts a chunk as a beat whenever its RMS exceeds 0.1, so at full demo level every
-  chunk is a “beat”; the studio's <em>Feature definitions</em> menu switches to AudioAnalyzer's adaptive beats.</p>
+  <p class="small mute">Beats are adaptive (desktop and web alike): a chunk is a beat when its energy exceeds the average
+  of the last 20 chunks by 1.5 standard deviations, at most one beat per 0.1 s.</p>
   <h3>Chunks 40–51: Python / JavaScript</h3>
   <div class="scroll"><table><tr><th>chunk</th>${list(KEYS, k => `<th>${k}</th>`)}</tr>
   ${list(rows, (row, i) => `<tr><td>${40 + i}</td>${list(KEYS, k => {

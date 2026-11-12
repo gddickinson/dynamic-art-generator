@@ -136,10 +136,8 @@ function emptyFeatures() {
     estimated_tempo: 120, harmonicity: 0, spectral_rolloff: 0, zero_crossing_rate: 0, frequency_bands: { bass: 0, mid: 0, treble: 0 } };
 }
 
-export const BEAT_RMS_THRESHOLD = 0.1;
-
-// desktop_audio_features: AudioAnalyzer keys, then the desktop's amplitude (RMS), beat (RMS > 0.1) and frequency
-// (peak of |rfft| of the raw chunk). mode 'analyzer' keeps AudioAnalyzer's own amplitude (peak) and adaptive beat.
+// desktop_audio_features: AudioAnalyzer keys (including its adaptive beat), then the desktop's amplitude (RMS) and
+// frequency (peak of |rfft| of the raw chunk). mode 'analyzer' keeps AudioAnalyzer's own amplitude (peak).
 export function desktopFeatures(x, sampleRate, analyzer, now, mode = 'desktop') {
   const f = analyzer ? analyzer.analyze(x, now) : {};
   if (mode === 'analyzer' && analyzer) return { ...f, frequency: f.dominant_frequency, raw_data: x };
@@ -151,5 +149,5 @@ export function desktopFeatures(x, sampleRate, analyzer, now, mode = 'desktop') 
     for (let k = 1; k < m.length; k++) if (m[k] > m[pi]) pi = k;
     frequency = pi * sampleRate / x.length;
   }
-  return { ...f, amplitude, beat_detected: amplitude > BEAT_RMS_THRESHOLD, frequency, raw_data: x };
+  return { ...f, amplitude, beat_detected: !!f.beat_detected, frequency, raw_data: x };
 }

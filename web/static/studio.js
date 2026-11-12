@@ -41,8 +41,8 @@ route('studio', async (_args, query) => {
       <div class="ctl" id="level-ctl"><label for="level">Demo level <b id="level-v">0.50</b></label>
         <input type="range" id="level" min="0.05" max="1" step="0.01" value="0.5"></div>
       <label for="mode">Feature definitions</label>
-      <select id="mode"><option value="desktop">Desktop app: RMS amplitude, beat = RMS &gt; 0.1</option>
-        <option value="analyzer">AudioAnalyzer: peak amplitude, adaptive beats</option></select>
+      <select id="mode"><option value="desktop">Desktop app: RMS amplitude</option>
+        <option value="analyzer">AudioAnalyzer: peak amplitude</option></select>
       <h3>Plugin parameters</h3>
       <div id="params"></div>
       <p class="small mute" id="pinfo"></p>

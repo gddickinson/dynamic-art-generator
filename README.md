@@ -96,8 +96,8 @@ Generates dynamic particle systems that form and collapse around shapes:
 
 The system analyzes audio input for:
 - **Amplitude**: Overall volume level (RMS of each 1024-sample chunk)
-- **Beat Detection**: volume (RMS) above 0.1 in the desktop app; `utils/audio_utils.py` AudioAnalyzer also offers
-  adaptive energy-based beats
+- **Beat Detection**: adaptive (`utils/audio_utils.py` AudioAnalyzer): a chunk's energy above the average of the
+  last 20 chunks by 1.5 standard deviations, at most one beat per 0.1 s
 - **Frequency Analysis**: dominant frequency, bass/mid/treble energy shares, spectral centroid and more
   (AudioAnalyzer, `utils/desktop_features.py`)
 

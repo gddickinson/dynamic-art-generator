@@ -2,7 +2,7 @@
 
 Every plugin reads audio_features['dominant_frequency'] and ['frequency_bands'], but main.AudioProcessor only produced
 amplitude, frequency, beat_detected and raw_data, so with a real microphone the frequency- and band-driven behaviour
-never responded. The features now include the AudioAnalyzer keys (amplitude/beat keep their desktop definitions).
+never responded. The features now include the AudioAnalyzer keys (amplitude keeps its desktop definition).
 """
 import os
 import sys
@@ -41,7 +41,7 @@ def test_audio_processor_features_include_plugin_keys(monkeypatch):
     assert f["frequency_bands"]["mid"] > 0.9
     # desktop definitions unchanged
     assert abs(f["amplitude"] - 0.5 / np.sqrt(2)) < 1e-3
-    assert f["beat_detected"] is True or f["beat_detected"] == np.True_
+    assert f["beat_detected"] is False       # adaptive: no beat before 20 chunks of history
     assert abs(f["frequency"] - 2000) < RATE / N
 
 
@@ -50,5 +50,5 @@ def test_desktop_audio_features_pure_function():
     from utils.desktop_features import desktop_audio_features
     f = desktop_audio_features(tone(100, 0.05), RATE, AudioAnalyzer(RATE, N))
     assert f["frequency_bands"]["bass"] > 0.9
-    assert not f["beat_detected"]            # RMS 0.035 < 0.1
+    assert not f["beat_detected"]
     assert "raw_data" in f and len(f["raw_data"]) == N

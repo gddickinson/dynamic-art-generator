@@ -2,16 +2,14 @@
 
 numpy only, so the web app and the tests can use exactly what the desktop computes:
   amplitude      RMS of the chunk (desktop definition)
-  beat_detected  amplitude > 0.1 (desktop definition)
+  beat_detected  AudioAnalyzer.detect_beat: chunk energy above the running average of the last 20 chunks plus
+                 1.5 standard deviations, at most one beat per 0.1 s (False without an analyzer)
   frequency      peak of |rfft| of the raw chunk, Hz
   raw_data       copy of the chunk
 plus every AudioAnalyzer.analyze_audio key the plugins read (dominant_frequency, frequency_bands, spectral_centroid,
 onset_detected, estimated_tempo, harmonicity, spectral_rolloff, zero_crossing_rate, rms) when an analyzer is given.
 """
 import numpy as np
-
-BEAT_RMS_THRESHOLD = 0.1
-
 
 def desktop_audio_features(audio_data, sample_rate, analyzer=None):
     audio_data = np.asarray(audio_data)
@@ -25,7 +23,7 @@ def desktop_audio_features(audio_data, sample_rate, analyzer=None):
         frequency = float(freqs[np.argmax(np.abs(fft))])
     features.update({
         "amplitude": amplitude,
-        "beat_detected": amplitude > BEAT_RMS_THRESHOLD,
+        "beat_detected": bool(features.get("beat_detected", False)),
         "frequency": frequency,
         "raw_data": audio_data.copy(),
     })

@@ -107,7 +107,7 @@ class AudioProcessor:
             # Calculate amplitude
             self.amplitude = np.sqrt(np.mean(audio_data**2))
 
-            # Simple beat detection (amplitude threshold)
+            # Fallback without utils: simple amplitude threshold (the normal path above uses adaptive beats)
             self.beat_detected = self.amplitude > 0.1
 
             # Frequency analysis (simplified)

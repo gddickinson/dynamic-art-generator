@@ -9,7 +9,7 @@ route('about', async () => {
   <h2>How it works</h2>
   <p>The desktop app (<code>main.py</code>, Tkinter + pygame) reads the microphone in chunks of ${info.chunk_size}
   samples at ${info.sample_rate} Hz. Each chunk becomes a dictionary of <em>audio features</em>: amplitude (RMS),
-  beat (RMS above 0.1), the dominant frequency, the share of energy in the bass (≤ 250 Hz), mid (250–4000 Hz) and treble
+  beat (energy above its running average by 1.5 standard deviations, at most one per 0.1 s), the dominant frequency, the share of energy in the bass (≤ 250 Hz), mid (250–4000 Hz) and treble
   bands, spectral centroid, roll-off, zero-crossing rate, onset, harmonicity and a tempo estimate
   (<code>utils/audio_utils.py</code> AudioAnalyzer). About ${info.target_fps} times a second the selected plugin gets the
   latest features and <code>dt = 1/60</code> in <code>update()</code>, then draws itself onto an
@@ -25,7 +25,7 @@ route('about', async () => {
       <code>set_parameter</code> behaviour with the Python plugin; see <a href="#/verify">Verify</a>.</li>
     <li><b>Inputs:</b> the built-in demo signal (the kick, snare and hi-hat of <code>DrumMachine</code> at 120 BPM with
       a gliding tone), an audio file, the microphone (only after you click, never sent anywhere), or the simulated
-      features of <code>launcher.py</code>. The studio can also switch to AudioAnalyzer's own amplitude and adaptive beat.</li>
+      features of <code>launcher.py</code>. The studio can also switch to AudioAnalyzer's own (peak) amplitude.</li>
     <li><b>Presets:</b> the ${info.presets} presets of <code>example_presets.json</code> load their plugin and parameters
       (preset keys that are not parameters of the plugin are skipped and listed).</li>
     <li><b>Differences:</b> random numbers come from a seeded generator, not Python's, so runs differ in detail;
