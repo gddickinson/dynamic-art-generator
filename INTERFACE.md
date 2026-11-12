@@ -18,7 +18,7 @@
 | `plugins/__init__.py` | `ArtPlugin` base class (update/render/get_parameters/set_parameter/reset), `PluginManager` |
 | `plugins/*.py` | 13 plugins: pendulum, particles, biomech_garden, cosmic_web, digital_spectre, ecosystem, musical_flock, neural_flow, noise_sphere, particle_fountain, quantum_jazz, rehoboam, space_junk |
 | `utils/audio_utils.py` | `AudioAnalyzer` (amplitude, rms, dominant frequency, bands, centroid, beats, onsets, tempo, ...), `DrumMachine`, `AudioSmoother` |
-| `utils/desktop_features.py` | `desktop_audio_features()`: what `AudioProcessor` hands the plugins (RMS amplitude, beat = RMS > 0.1, + AudioAnalyzer keys) |
+| `utils/desktop_features.py` | `desktop_audio_features()`: what `AudioProcessor` hands the plugins (RMS amplitude, adaptive AudioAnalyzer beat, + AudioAnalyzer keys) |
 | `utils/math_utils.py` | `Vector2D`, `ColorUtils`, `GeometryUtils` |
 | `config.json`, `example_presets.json` | Settings (canvas 800×600, 44.1 kHz, 1024-sample chunks); 12 presets |
 
@@ -44,7 +44,7 @@
 | File | Coverage |
 |------|----------|
 | `tests/test_web.py` | API, static build, node tests, fixtures current, every plugin ported, files < 500 lines (web) |
-| `tests/test_desktop_audio_features.py`, `test_particles_zero_life.py`, `test_plugin_fixes_*.py` (+ `plugin_test_utils.py`) | Regression tests for the fixed bugs |
+| `tests/test_desktop_audio_features.py`, `test_desktop_beats.py`, `test_particles_zero_life.py`, `test_ecosystem_prey_hue.py`, `test_plugin_fixes_*.py` (+ `plugin_test_utils.py`) | Regression tests for the fixed bugs |
 
 ## Data flow
 ```
